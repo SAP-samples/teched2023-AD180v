@@ -1,10 +1,10 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD180v)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD180v)
 
-# Session ID - Session Title
+# AD180v - Create Apps, Processes, and Workspaces with SAP Build Solutions
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called AD180v - Create Apps, Processes, and Workspaces with SAP Build Solutions.  
 
 ## Overview
 
@@ -12,7 +12,10 @@ This session introduces attendees to...
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are trial access to:
+- SAP Build Process Automation, as described here...
+- SAP Build Apps, as described here...
+- SAP Build Work Zone, as described here...
 
 ## Exercises
 
