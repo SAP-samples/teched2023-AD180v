@@ -8,7 +8,8 @@ This repository contains the material for the SAP TechEd 2023 session called AD1
 
 ## Overview
 
-This session introduces attendees to...
+Learn how to accelerate development and automation without writing code. Experience how to leverage simple drag-and-drop capabilities to solve complex business problems and build delightful solutions. Extending or improving standard business process running in business solutions like SAP S/4HANA. The combination of SAP Build Process Automation, SAP Build Apps and SAP Build Work Zone makes the difference. 
+Exercises can be completed at your own pace. 
 
 ## Requirements
 
