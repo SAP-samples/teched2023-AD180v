@@ -1,19 +1,8 @@
----
-parser: v2
-auto_validation: true
-time: 5
-tags: [ tutorial>beginner, software-product>sap-business-technology-platform, topic>cloud, software-product>sap-build-work-zone--standard-edition, software-product>sap-build-work-zone--standard-edition]
-primary_tag: software-product>sap-build-work-zone--standard-edition
-author_name: Lindsay Bert
-author_profile: https://github.com/LindsayBert
----
-
 # Set Up SAP Build Work Zone, standard edition Using a Trial Account
 <!-- description --> To get started with building a site in SAP Build Work Zone, standard edition, you must perform the required onboarding steps.
 
 ## Prerequisites
   - If you want to use a trial environment, you need to first register it. You can register to a trial account using this link: [Create a trial account](https://www.sap.com/israel/products/business-technology-platform/trial.html). Scroll down and click **Get trial now**.
-  - If you're using a production environment, you should have a subaccount configured. If you don't have a configured subaccount, refer to this topic: [Initial Setup](https://help.sap.com/viewer/8c8e1958338140699bd4811b37b82ece/Cloud/en-US/fd79b232967545569d1ae4d8f691016b.html).
 
 
 ## You will learn
@@ -28,6 +17,10 @@ author_profile: https://github.com/LindsayBert
 In this group of tutorials our goal is to create a site using SAP Build Work Zone, standard edition. But before we can do this, there are some steps you'll need to do in the SAP BTP cockpit.
 
 >SAP Build Work Zone, standard edition offers two types of standard plans. The **Applications Plan** which is used to access your applications from a site. In this case, you need to create a subscription to SAP Build Work Zone, standard edition, which you will do in Step 1. The 2nd plan is the **Service Plan** which is used to integrate with other services. This plan is not required for the scope of this tutorial.
+
+
+**If you have used the booster for SAP Build Apps, theses steps have already been done. Please move on with "Add yourself to the Launchpad_Admin role"**
+
 
 ### Subscribe to the SAP Build Work Zone, standard edition
 
