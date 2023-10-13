@@ -18,17 +18,17 @@ The exercises are belonging to each other, so please follow the flow accordingly
 
 The requirements to follow the exercises in this repository are trial access to all three products.
 Please **follow the steps for each product**, as described in the following exercises and **also following the order**:
-1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/build-apps-trial-booster)
-2. Setup [SAP Build Work Zone](exercises/0_Setup_Trial_Landscape/cp-portal-cloud-foundry-getting-started)
-3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/spa-subscribe-free-trial)
+1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/build-apps-trial-booster/build-apps-trial-booster.md)
+2. Setup [SAP Build Work Zone](exercises/0_Setup_Trial_Landscape/cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md)
+3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/spa-subscribe-free-trial/spa-subscribe-free-trial.md)
 
 Hint: It is also possible to follow the exercise in your own productive environment.
 
 ## Exercises
 
 - **Exercise 1 - Create a Sales Order Process with SAP Build Process Automation**
-    - [Exercise 1.1 - Create Sales Order Business Process](exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder)
-    - [Exercise 1.2 - Run the Sales Order Business Process](exercises/ex1#exercise-12-sub-exercise-2-description)
+    - [Exercise 1.1 - Create Sales Order Business Process](exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/spa-academy-salesorder.md)
+    - [Exercise 1.2 - Run the Sales Order Business Process](exercises/1_Build_Process_Automation/1_2_spa-academy-run-salesorderprocess/spa-academy-run-salesorderprocess.md)
   
 - **Exercise 2 - Create a Sales Order App with SAP Build Apps**
     - [Exercise 2.1 - Create Destination to Trigger Process from any Service](exercises/2_Build_Apps/1_spa-create-service-instance-destination/spa-create-service-instance-destination.md)
