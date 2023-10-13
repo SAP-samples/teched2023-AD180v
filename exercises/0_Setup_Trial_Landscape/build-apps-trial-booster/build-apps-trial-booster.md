@@ -81,8 +81,7 @@ When you are done you will see a new browser tab with the administration UI for 
 ### Open SAP Build Apps
 In the cockpit of your subaccount, go to **Services and Instances**.
 
-![SAP Build Apps service](/exercises/0_Setup_Trial_Landscape/build-apps-trial-booster
-/images/finish2.jpg)
+![SAP Build Apps service](/exercises/0_Setup_Trial_Landscape/build-apps-trial-booster/images/finish2.jpg)
 
 Click on **SAP Build Apps** (or the little icon) to view the SAP Build lobby.
 
