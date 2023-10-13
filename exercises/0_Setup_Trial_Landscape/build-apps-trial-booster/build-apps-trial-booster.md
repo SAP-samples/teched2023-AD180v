@@ -43,11 +43,11 @@ SAP BTP offers a booster that automatically sets up all the things you need to s
 
     >You will not be able to select **Create Subaccount** because your trial global account is limited to one subaccount, unless you deleted the subaccount automatically created when you created your trial account.
 
-6. The booster will automatically select the one subaccount, so there is nothing to do on the **Configure subaccunt** screen.
+6. The booster will automatically select the one subaccount, so there is nothing to do on the **Configure subaccount** screen.
 
     Click **Next**.
 
-7. On the **Add Users** screen, you are automatically giving the apprpriate roles so there is nothing to do here.
+7. On the **Add Users** screen, you are automatically giving the appropriate roles so there is nothing to do here.
 
     Click **Next**.
 
