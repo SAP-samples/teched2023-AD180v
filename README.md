@@ -18,9 +18,9 @@ The exercises are belonging to each other, so please follow the flow accordingly
 
 The requirements to follow the exercises in this repository are trial access to all three products.
 Please **follow the steps for each product**, as described in the following exercises and **also following the order**:
-1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/build-apps-trial-booster/build-apps-trial-booster.md)
-2. Setup [SAP Build Work Zone](exercises/0_Setup_Trial_Landscape/cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md)
-3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/spa-subscribe-free-trial/spa-subscribe-free-trial.md)
+1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/build-apps-trial-booster.md)
+2. Setup [SAP Build Work Zone](exercises/0_Setup_Trial_Landscape/2_cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md)
+3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/3_spa-subscribe-free-trial/spa-subscribe-free-trial.md)
 
 Hint: It is also possible to follow the exercise in your own productive environment.
 
