@@ -331,7 +331,7 @@ In this step, you will create and design a form which will be sent as notificati
 
    ![9.4](9.4.png)
 
-8. Configure the inputs of **Order Confirmation Form**. Navigate to Inputs and map the fields accordingly.
+8. Configure the inputs of **Order Confirmation Form**. Navigate to Inputs and map the fields accordingly. **Save** your work.
 
      ![9.5](9.5.png)
 
@@ -347,7 +347,47 @@ There are several ways to accelerate the process design. You will now use the fu
 
 2. Change the name to **Order Rejection Form** and select **Duplicate**.
 
---> to be changed
+    ![OR2](OR2.png)
+
+3. At the **Approval Form** select the **+** icon at the **Reject** output, in the context menu select **Forms** and select the newly created or, in fact, duplicated **Order Rejection Form**.
+
+    ![OR3](OR3.png)
+
+4. Select **Order Rejection Form** and open **Edit Form** to adapt this duplicated form.
+
+    ![OR4](OR4.png)
+
+5. You just need to adapt the following items
+
+|  **Form Fields**    | **Field Settings with Label** | **Configuration (Read Only)**
+|  :------------- | :------------- |:-------
+| Headline 1 | Rejected Sales Order | |
+| Paragraph  |The order has been rejected. You can find the details of your order below: | |
+| Text Area  | Message to Buyer: | X |
+
+All the other fields remain unchanged. That was quick. **Save** your work.
+
+   ![OR5](OR5.png)
+
+6. Go back to the process, select **Order Rejection Form** and adapt the **Subject** as well as the **Recipients** (use again your eMail ID used for logon)
+
+   ![OR6](OR6.png)
+
+7. As done in previous steps, maintain the **Inputs** of this form by mapping the entries of the **Process Content**. **Save** your work.
+
+   ![OR7](OR7.png)
+
+8. Finally connect the outgoing flow of the *Order Rejection Form** with the **End** step. **Save** your work.
+
+   ![OR8](OR8.png)
+
+
+
+   
+
+
+--> to be chang
+
 Notifications can be sent via an Email or to the SAP Build Inbox of the Seller. Before adding mail notifications to a process, you must first configure your SMTP mail destinations for SAP Build Process Automation. Please refer to the pre-requisites to learn how to configure SMTP destination to send mail notifications.
 
 In this step, you will send out an email notification to the Seller if the Sales order is rejected. You need to configure the mail server to use the Mail Artifact.
