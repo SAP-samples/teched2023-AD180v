@@ -12,7 +12,7 @@
 
 ## Intro
 
-In this group of tutorials our goal is to create a site using SAP Build Work Zone, standard edition. But before we can do this, there are some steps you'll need to do in the SAP BTP cockpit.
+In the upcoming exercises your goal is to create a site using SAP Build Work Zone, standard edition. But before we can do this, there are some steps you'll need to do in the SAP BTP cockpit.
 
 >SAP Build Work Zone, standard edition offers two types of standard plans. The **Applications Plan** which is used to access your applications from a site. In this case, you need to create a subscription to SAP Build Work Zone, standard edition, which you will do in Step 1. The 2nd plan is the **Service Plan** which is used to integrate with other services. This plan is not required for the scope of this tutorial.
 
@@ -91,21 +91,21 @@ To be able to access **SAP Build Work Zone, standard edition**, users must be as
 
 2. In the Search field start typing `Launchpad` to find the `Launchpad_Admin` role collection.
 
-   [Search for launchpad admin](11-search-launchpad-admin.png)
+   ![Search for launchpad admin](11-search-launchpad-admin.png)
 
 3. In the row with the `Launchpad_Admin` role collection, click the arrow at the far right of the row.
 
-    [Click arrow](12-open-role-collection.png)
+    ![Click arrow](12-open-role-collection.png)
 
     You can see all the details of the `Launchpad_Admin` role collection.
 
 4. Click **Edit**
 
-    [Click Edit](13-click-edit.png)
+    ![Click Edit](13-click-edit.png)
 
 5. Under the **Users** tab, enter your email in both the **ID** and the **E-Mail** fields. Then click **Save**.
 
-    [Add emails](14-add-emails.png)
+    ![Add emails](14-add-emails.png)
 
 
 You've now been assigned to the `Launchpad_Admin` role collection and you can access **SAP Build Work Zone, standard edition** and carry out all your admin tasks.
@@ -130,3 +130,7 @@ You are now ready to access **SAP Build Work Zone, standard edition**.
    The **Site Directory** opens. This is where you'll create and manage your sites.
 
   ![Open Site Directory](17-open-site-directory.png)
+
+
+## Next Step
+Move on with [the setup of SAP Build Process Automation in trial](/exercises/0_Setup_Trial_Landscape/3_spa-subscribe-free-trial/spa-subscribe-free-trial.md)
