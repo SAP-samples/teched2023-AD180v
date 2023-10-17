@@ -11,15 +11,13 @@
   - How to access SAP Build Work Zone, standard edition
 
 ## Intro
-    
->You can also do this tutorial using a SAP BTP free plan option. To do this, please follow this tutorial: [Set Up SAP Build Work Zone, standard edition Using the Free Tier Model for SAP BTP](cp-portal-cloud-foundry-setup-freetier).
 
 In this group of tutorials our goal is to create a site using SAP Build Work Zone, standard edition. But before we can do this, there are some steps you'll need to do in the SAP BTP cockpit.
 
 >SAP Build Work Zone, standard edition offers two types of standard plans. The **Applications Plan** which is used to access your applications from a site. In this case, you need to create a subscription to SAP Build Work Zone, standard edition, which you will do in Step 1. The 2nd plan is the **Service Plan** which is used to integrate with other services. This plan is not required for the scope of this tutorial.
 
 
-**If you have used the booster for SAP Build Apps, theses steps have already been done. Please move on with "Add yourself to the Launchpad_Admin role"**
+**IMPORTANT: If you have used the booster for SAP Build Apps, theses steps have already been done for you. Please move on with "[Add yourself to the Launchpad_Admin role](/exercises/0_Setup_Trial_Landscape/2_cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md#add-yourself-to-the-launchpad_admin-role)"**
 
 
 ### Subscribe to the SAP Build Work Zone, standard edition
@@ -87,28 +85,27 @@ Before you can access the SAP Build Work Zone, standard edition, you first need 
 
 To be able to access **SAP Build Work Zone, standard edition**, users must be assigned to the `Launchpad_Admin` role. In this step, you'll assign yourself to this role so that you can access the service and create a site.
 
-
 1. Under **"Security** click **Role Collections** from the side menu.
 
-      <!-- border -->![Open role collections](10-role-collections.png)
+    ![Open role collections](10-role-collections.png)
 
 2. In the Search field start typing `Launchpad` to find the `Launchpad_Admin` role collection.
 
-    <!-- border -->![Search for launchpad admin](11-search-launchpad-admin.png)
+   [Search for launchpad admin](11-search-launchpad-admin.png)
 
 3. In the row with the `Launchpad_Admin` role collection, click the arrow at the far right of the row.
 
-    <!-- border -->![Click arrow](12-open-role-collection.png)
+    [Click arrow](12-open-role-collection.png)
 
     You can see all the details of the `Launchpad_Admin` role collection.
 
 4. Click **Edit**
 
-    <!-- border -->![Click Edit](13-click-edit.png)
+    [Click Edit](13-click-edit.png)
 
 5. Under the **Users** tab, enter your email in both the **ID** and the **E-Mail** fields. Then click **Save**.
 
-    <!-- border -->![Add emails](14-add-emails.png)
+    [Add emails](14-add-emails.png)
 
 
 You've now been assigned to the `Launchpad_Admin` role collection and you can access **SAP Build Work Zone, standard edition** and carry out all your admin tasks.
