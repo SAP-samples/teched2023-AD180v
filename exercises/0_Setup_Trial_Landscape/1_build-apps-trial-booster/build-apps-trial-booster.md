@@ -95,3 +95,6 @@ You should now see SAP Build Apps.
 
 ![Log in](/exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/images/loginApps.png)
 
+
+## Next Step
+Move on with the [setup of SAP Build Work Zone in trial](exercises/0_Setup_Trial_Landscape/2_cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md).
