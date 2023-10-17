@@ -74,11 +74,11 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     ![Triggers](4.png)
 
-2. You can view the API URL and the payload that must be sent to start the process. Copy the payload, which will be used in later steps. If you go into the deployed view of the process, you can see the API details of how you can call the API Trigger:
+2. You can view the API URL and the payload that must be sent to start the process. **Copy the payload**, which will be used in later steps. If you go into the deployed view of the process, you can see the API details of how you can call the API Trigger:
 
     1. The API triggers can be called via the public REST API and are available in SAP Business Accelerator Hub.
     2. The URL shown in the screenshot below is the complete API URL where:
-        - `https://spa-api-gateway-bpi-eu-prod.cfapps.sap.hana.ondemand.com` is the host URL and will change depending upon the system you have deployed the process.
+        - `https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com` is the host URL and will change depending upon the system you have deployed the process.
         - `/workflow/rest/v1/workflow-instances` is the relative URL to start the workflow and remains static.
     3. Method: POST
     4. The payload in the screenshot is the body of the POST API call. 
@@ -103,15 +103,15 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
 
-    - From the Build lobby, Navigate to Monitor tab and within the Monitor tab, access **Manage** > **Process and Workflow Definitions**.
-    - Search for the project `<your unique identifier>_Sales Management` that you have created in previous tutorial.
+    - From the **SAP Build lobby**, Navigate to **Monitor** tab and within the Monitor tab, access **Manage** > **Process and Workflow Definitions**.
+    - Search for the project `Sales Order Management <your unique identifier>` that you have created in previous tutorial.
     - Click on **Start New Instance**.
 
     ![Run](4.2.png)
 
-5.  Remove the example payload in the dialog. You need to add the payload you saved earlier, but only part of the payload.
+5.  **Remove** the example payload in the dialog. You need to add the payload you saved earlier, but only part of the payload.
    
-    Remove the definition ID and context (since here these are understood) and leave just a JSON object that contains the `salesorderdetails` fields.
+    **Remove** the definition ID and context (since here these are understood) and leave just a JSON object that contains the `salesorderdetails` fields.
 
     Provide values to the fields as shown below (you can even take the JSON below for yourself). Your text should look something like this.
     
@@ -120,13 +120,13 @@ Once you have successfully deployed the business process with an API trigger, yo
             "salesorderdetails": 
             {
                 "material": "HT-1000",
-                "orderAmount": 120000,
+                "orderAmount": 101,
                 "shipToParty": "SAP",
                 "salesOrderType": "01",
                 "salesOrganisation": "01",
                 "distributionChannel": "01",
                 "shippingCountry": "India",
-                "expectedDeliveryDate": "2023-10-10",
+                "expectedDeliveryDate": "2023-12-10",
                 "division": "01"
             }
      }    
@@ -134,16 +134,15 @@ Once you have successfully deployed the business process with an API trigger, yo
     ``` 
     >Common issues when you are unable to start the instance:
 
-    >1. SAP Build Process Automation supports the ISO 8601 format for date and time: YYYY-MM-DD (2023-03-16) and hh:mm:ss (15:33:16).Hence make sure to enter `expectedDeliveryDate` in the supported format as shown above.
+    >1. SAP Build Process Automation supports the ISO 8601 format for date and time: YYYY-MM-DD (2023-12-10) and hh:mm:ss (15:33:16).Hence make sure to enter `expectedDeliveryDate` in the supported format as shown above.
     >2. There is no mismatch in the field names.
-    >3. Data type mismatch. For example, if you enter order amount as a string instead of a number ("orderAmount":"120000").
-
+    >3. Data type mismatch. For example, if you enter order amount as a string instead of a number ("orderAmount":"101").
     
 6. Click **Start New Instance and Close**.
 
     ![Run](5.png)
 
-    >Don't modify the payload when you integrate with SAP Build Apps.
+
 
 
 ### Monitoring the process flow
@@ -156,7 +155,7 @@ Monitoring business process is one of the key aspect of the automated processes.
    
     To monitor all the running instances of the process, you must go to **Process and Workflow Instances** under the **Monitor** section.
 
-    ![Run](6.png)
+    ![Run](Run6.png)
 
     In there, you will see all the running, erroneous and suspended process instances. Use the filter bar to get a more customized view of the process instances based on different statutes like running, completed, suspended, terminated and so forth.
 
@@ -166,19 +165,13 @@ Monitoring business process is one of the key aspect of the automated processes.
 
     >Explore different process monitoring options. Observe the process instance information, process context which is the actual process data flowing across different activities in the process and the execution logs where you can see entire trace of how the process has been progressing with some basic runtime information of each activity.
 
-    Since the order amount is greater 100000, the process requires an approval.
+    Since the order amount is greater than 100, the process requires an approval.
 
-    ![Run](6.1.png)
+    ![Run](Run6.1.png)
 
 3. As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application.
 
     ![Run](7.png)
-
-    In the **Logs** section, expand the top activity. Notice the **Recipients** list. This is the same as configured in the **General** section of the **Approval Form**. The task will go into the inboxes of all the recipients.
-
-    ![Recipients](recipients.png)
-
-    You will open the **My Inbox** in the next step.
 
 
 
@@ -188,33 +181,33 @@ Tasks are the request for the users to participate in an approval or review proc
 
 Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon in the upper right.
 
-![My Inbox icon](MyInboxIcon.png)
-
-![My Inbox](MyInbox.png)
+  ![My Inbox](Run7.png)
 
 
 1.  Open the **My Inbox**, and find the task for the process you just triggered.
 
 2. Click **Approve**.
 
-    ![Inbox](8.png)
+    ![Inbox](Run8.png)
 
 3.  Once you **approve/reject** the approval task, **refresh** the inbox again to get the final notification based on action taken.
    
 4. Click on **Submit** to complete the process.
 
-    ![Run](8.1.png)
+    ![Run](Run8.1.png)
 
     Once you acknowledge the notification sent via the approval process, the process will be completed.
 
-    ![Run](9.png)
+    ![Run](Run9.png)
 
 Repeat the testing above twice more:
 
-- Amount above 100000 and reject the request. You should get an email.
-- Amount below 100000. This should send the auto-approval form to the **My Inbox**.
+- Amount above 100 and reject the request. You should get a rejection notification.
+- Amount below 100. This should send the auto-approval form to the **My Inbox**.
 
 
-You have successfully built Sales order Approval Business process and is now ready to integrate with SAP Build Apps.
+You have successfully built Sales Order Approval Business process and is now ready to integrate with SAP Build Apps.
 
+## Next Step
 
+Start with the next exercise [**Create Destination to Trigger Process from any Service**](/exercises/2_Build_Apps/1_spa-create-service-instance-destination/spa-create-service-instance-destination.md)
