@@ -243,30 +243,29 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
 5. Design the form by dragging and dropping the corresponding form elements as shown below.
 
-
-    |  **Field Settings with Label**    | **Form Fields** | **Configuration (Read Only)**
-    |  :------------- | :-------------
-    | Approve Sales Order   | HeadLine 1 | |
-    | A new order has been received. Please review and confirm whether the requirements can be met or not.| Paragraph | |
-    | Material | Text | X |
-    | Order Amount | Number | X|
-    | Customer Name | Text | X
-    | Expected Delivery Date | Date | X|
-    | I acknowledge that we have received your order and will process it based on the availability | Checkbox | |
-    | Message to Buyer | Text Area | |
-
-     ![8.4](8.4.png)
+|  **Field Settings with Label**    | **Form Fields** | **Configuration (Read Only)**
+|  :------------- | :------------- | :---------
+| Approve Sales Order   | HeadLine 1 |  |
+| A new order has been received. Please review and confirm whether the requirements can be met or not.| Paragraph |  |
+| Material | Text | X |
+| Order Amount | Number | X|
+| Customer Name | Text | X
+| Expected Delivery Date | Date | X|
+| I acknowledge that we have received your order and will process it based on the availability | Checkbox | |
+| Message to Buyer | Text Area |    |
 
 
-6. **Save** the form.
+![8.5](8.4.png)
 
-7. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**. Don't worry about the big red X, this will disappear as you move on configuring the form.
+1. **Save** the form.
+
+2. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**. Don't worry about the big red X, this will disappear as you move on configuring the form.
     In the **Subject** section:
 
     - Enter **Please review**.
     - Select **Material** from the sales order details.
 
-     ![8.5](8.5.png)
+    ![8.5](8.5.png)
 
     In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby or SAP BTP).
 
@@ -274,7 +273,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
     
     > Don't copy and paste the email ID. Enter the email ID manually.
 
-8. Configure the inputs of the **Approval Form**. Navigate to Inputs and map the fields accordingly.
+3. Configure the inputs of the **Approval Form**. Navigate to Inputs and map the fields accordingly.
 
      ![8.6](8.6.png)
 
@@ -487,3 +486,6 @@ Once you have successfully completed the project, your final process looks as be
 
  This completes the process design with condition criteria that will decide what process flow is executed and whether there will be an auto-approval or a one-step approval route.
  Now the business process is ready to integrate with SAP Build Apps.
+
+
+[def]: 8.4.png
