@@ -255,11 +255,11 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 | Message to Buyer | Text Area |    |
 
 
-![8.5](8.4.png)
+   ![8.5](8.4.png)
 
-1. **Save** the form.
+6. **Save** the form.
 
-2. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**. Don't worry about the big red X, this will disappear as you move on configuring the form.
+7. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**. Don't worry about the big red X, this will disappear as you move on configuring the form.
     In the **Subject** section:
 
     - Enter **Please review**.
@@ -267,17 +267,19 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
     ![8.5](8.5.png)
 
-    In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby or SAP BTP).
+8. In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby or SAP BTP).
+    > Don't copy and paste the email ID. Enter the email ID manually.
 
      ![8.5](8.41.png)
     
-    > Don't copy and paste the email ID. Enter the email ID manually.
+    
 
-3. Configure the inputs of the **Approval Form**. Navigate to Inputs and map the fields accordingly.
-
-     ![8.6](8.6.png)
-
+9. Configure the inputs of the **Approval Form**. Navigate to Inputs and map the fields accordingly.
 >"Message to Buyer" and the checkmark box can't be mapped, as these inputs will just be provided during runtime in this form.
+
+   ![8.6](8.6.png)
+
+
 
 ### Create and configure Order Approval Notification form
 
