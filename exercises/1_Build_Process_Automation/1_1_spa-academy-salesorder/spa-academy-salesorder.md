@@ -283,7 +283,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
 ### Create and configure Order Approval Notification form
 
-In this step, you will create and design a form which will be sent as notification to the seller if the Sales order is approved. Upon the execution of the process, this notification form will be available in the SAP Build Lobby Inbox which will be covered in the later part of the exercise.
+In this step, you will create and design a form which will be sent as notification to the seller if the Sales order is approved. Upon the execution of the process, this notification form will be available in My Inbox which will be covered in the later part of the exercise.
 
 
 1. Click on **+** > **Forms** > **New Form**.
@@ -303,7 +303,7 @@ In this step, you will create and design a form which will be sent as notificati
 5. Design the form by dragging and dropping the corresponding Form elements as shown below.
 
     |  **Form Fields**    | **Field Settings with Label** | **Configuration (Read Only)**
-    |  :------------- | :-------------
+    |  :------------- | :------------- |:-------
     | Headline 1 | Order Confirmation | |
     | Paragraph  |Your order has been received and accepted for delivery. We will send you the details as soon as the order is shipped. You can find the details of your order below, please review and verify your request: | |
     | Text Area  | Message from the supplier: | X
@@ -311,39 +311,43 @@ In this step, you will create and design a form which will be sent as notificati
     | Text | Customer Name | X
     | Number | Order Amount | X
     | Date | Expected Delivery Date | X
-    | Paragraph | Please press the SUBMIT button to acknowledge the order status.| |
+    | Paragraph | Please select the SUBMIT button to acknowledge the order status.| |
 
      ![9.3](9.3.png)
 
 6. **Save** the form.
 
 7. Back in the process, click on the **Order Confirmation Form**  and configure the **Subject** and **Recipients**.
+>Again, please don't get nervous regarding the red "X", this will disappear as we move on.
 
-    In the **Subject** section:
+ In the **Subject** section:
+   - Enter **Your order**.
+   - Select **material** from the sales order details.
+   - Enter **has been approved**.
 
-    - Enter **Your order**.
-    - Select **Material** from the sales order details.
-    - Enter **has been approved**.
+ In the **Recipients** section, enter your login ID (email).
 
-    In the **Recipients** section, enter your login ID (email).
+ >In this tutorial, to complete the process, you will play the dual role of Supplier and Seller. Hence, you would map your email ID in the Notification Form as well.
 
-    In this tutorial, to complete the process, you will play the dual role of Supplier and Seller. Hence, you would map your email ID in the Notification Form as well.
-
-
-     ![9.4](9.4.png)
+   ![9.4](9.4.png)
 
 8. Configure the inputs of **Order Confirmation Form**. Navigate to Inputs and map the fields accordingly.
 
      ![9.5](9.5.png)
 
 
-    >Please note that the Approval Form will still have an error (red circle with X) because you have not yet configured the Reject path. You will do this later.
 
+### Create and configure Order Rejection Notification Form
 
+There are several ways to accelerate the process design. You will now use the functionality to duplicate a form, to avoid creating every field from scratch again. But this also means that you need to carefully adapt the duplicated fields.
+
+1. Go back to the **Overview** tab. Select **Order Confirmation Form**, click on the three dots to open the context menu, and select **Duplicate**.
+
+    ![OR1](OR1.png)
+
+2. Change the name to **Order Rejection Form** and select **Duplicate**.
 
 --> to be changed
-### Create and configure Order Rejection Notification through an Email
-
 Notifications can be sent via an Email or to the SAP Build Inbox of the Seller. Before adding mail notifications to a process, you must first configure your SMTP mail destinations for SAP Build Process Automation. Please refer to the pre-requisites to learn how to configure SMTP destination to send mail notifications.
 
 In this step, you will send out an email notification to the Seller if the Sales order is rejected. You need to configure the mail server to use the Mail Artifact.
