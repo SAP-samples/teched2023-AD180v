@@ -93,4 +93,5 @@ You should now see SAP Build Apps.
 
 >When you do login to SAP Build Apps, use your password that you created for the custom identity provider.
 
->![Log in](/exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/images/loginApps.png)
+![Log in](/exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/images/loginApps.png)
+
