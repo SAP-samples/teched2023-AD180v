@@ -143,7 +143,7 @@ In this option you will be defining each field with field name and type of field
      ![6.7](6.7.png)
 
 
-4.  Repeat the process to add all the fields of the type as shown below.
+4.  Repeat the step to add all the fields of the type as shown below.
 
     |  Field Name   | Type
     |  :------------- | :-------------
@@ -158,6 +158,7 @@ In this option you will be defining each field with field name and type of field
     |  `division`  | String |
 
     >**IMPORTANT:** The spelling and casing of the fields, as well as any extra spaces, is crucial because the API to trigger the process will require the fields exactly as written.
+    Also ensure you have assigned the correct type. Rather check twice.
 
     Your final data type looks as below.
 
@@ -170,9 +171,10 @@ In this option you will be defining each field with field name and type of field
 
 ### Create and configure API trigger
 
->You will build the initial screen of Sales Order Approval process using SAP Build Apps in the next tutorial. This API trigger will be invoked on a click of **Get Approval** button in SAP Build Apps.
+>You will build the initial screen of Sales Order Approval process using SAP Build Apps in the next exercise. This API trigger will be invoked on a click of **Get Approval** button in SAP Build Apps.
 
-The process can be triggered with a Form or using an API trigger. Since you are integrating a Sales Order Approval Process with SAP Build Apps, you will create an API trigger for the process. The inputs and outputs are configured for the API trigger and these inputs can then be used as input fields in your process, for example, in a form or approval form.
+The process can be triggered with a form, by an event or using an API trigger. Since you are integrating a Sales Order Approval Process with SAP Build Apps, you will create an API trigger for the process. 
+The inputs and outputs are configured for the API trigger and these inputs can then be used as input fields in your process, for example, in a form or approval form.
 
 1.  Back on your Order Processing process page, in the process builder canvas, click on **+** > **API** > **New API Trigger**.
 
@@ -195,6 +197,8 @@ The process can be triggered with a Form or using an API trigger. Since you are 
     |  **Name**    | **Type**
     |  :------------- | :-------------
     |  `salesorderdetails`       | `SalesOrder`
+    
+    **Important:** Ensure you have changed the "Type" from **String** to **SalesOrder**. This is the data type you have created before.
 
 5. **Apply** changes.
 
@@ -202,7 +206,7 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
 6. **Save**  the project.
 
-    The inputs are now displayed in the process settings side panel.
+    When you select **Sales Order Trigger** the inputs are now displayed in the process settings side panel
 
     >These input fields will be mapped to fields in SAP Build Apps.
 
@@ -210,7 +214,7 @@ The process can be triggered with a Form or using an API trigger. Since you are 
 
 ### Create and configure Approval Form
 
-Approvals are an important part of business processes, whether performed manually or automatically approved based on process conditions. In the Sales Order Approval Process, Supplier needs to review and approve the Sales Order requests.
+Approvals are an important part of business processes, whether performed manually or automatically approved based on process conditions. In the Sales Order Approval Process, the supplier needs to review and approve the Sales Order requests.
 
 With SAP Build Process Automation, you can manage approvals by creating and adding an approval form to a business process. Hence, you would create an Approval form for the Supplier where he/she can Accept/Reject the Sales Order request.
 
@@ -256,8 +260,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
 6. **Save** the form.
 
-7. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**.
-
+7. Back within the process, click on the **Approval Form**  and configure the **Subject** and **Recipients**. Don't worry about the big red X, this will disappear as you move on configuring the form.
     In the **Subject** section:
 
     - Enter **Please review**.
@@ -265,7 +268,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
      ![8.5](8.5.png)
 
-    In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby).
+    In the **Recipients** section, enter your login ID (the email you used to sign into the SAP Build lobby or SAP BTP).
 
      ![8.5](8.41.png)
     
@@ -275,6 +278,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
      ![8.6](8.6.png)
 
+>"Message to Buyer" and the checkmark box can't be mapped, as these inputs will just be provided during runtime in this form.
 
 ### Create and configure Order Approval Notification form
 
