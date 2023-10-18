@@ -85,9 +85,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Client ID | Paste the clientid noted previously in step 2
     | Client Secret | Paste the client secret noted previously in step 2
     | Token Service URL Type | Dedicated
-    | Token Service URL|  `<url>/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div>
-    Copy and paste the URL you have taken in the steps before and add `/oauth/token` to it.
-    The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
+    | Token Service URL|  `<url>/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div> Copy and paste the URL you have taken in the steps before and add `/oauth/token` to it. The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
     | Token Service User| Blank
     | Token Service Password| Blank
 

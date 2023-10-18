@@ -1,6 +1,6 @@
 
-# Create SAP Build App to Trigger Workflow
-<!-- description --> Trigger a workflow created in SAP Build Process Automation from an app created with SAP build Apps.
+# Create SAP Build App to Trigger Process
+<!-- description --> Trigger a process created in SAP Build Process Automation from an app created with SAP build Apps.
 
 ## Prerequisites
 - You set up SAP Build App and entered the lobby.
@@ -8,21 +8,16 @@
 - You know the `definitionId` for the process you created.
 - You have set up the destination to SAP Build Process Automation, as described here <link to create instance>
 
-
-
-
 ## You will learn
 - How to create a simple UI
 - How to create a form
 - How to stylize your UI
-- How to trigger from your app a workflow in SAP Build Process Automation
-
-
+- How to trigger from your app a process in SAP Build Process Automation
 
 ## Intro
-This tutorial shows you how to use SAP Build Apps to create and stylize a simple, one-page app that triggers an SAP Build Process Automation workflow.
+This tutorial shows you how to use SAP Build Apps to create and stylize a simple, one-page app that triggers a process in SAP Build Process Automation.
 
-Specifically, the app lets the user enter sales order details and then send these to a process for approval. (In a real-world scenario, the sales order would then be created in S/4HANA Cloud, but that is not part of our flow.)
+Specifically, the app lets the user enter sales order details and then send these to a process for approval. (In a real-world scenario, the sales order would then be created in SAP S/4HANA Cloud, but that is not part of our flow.)
 
 Your app will look something like this:
 
@@ -31,23 +26,14 @@ Your app will look something like this:
 &nbsp;
 
 >**Before You Begin:** You will need:
->
->- The name of the SAP BTP destination to your SAP Build Process Automation instance. The destination **MUST** be configured with the URL of the entire path of the SAP Build Process Automation [Workflow Instances API](https://api.sap.com/api/SPA_Workflow_Runtime/resource).
-
->   **For workshops, the destination will be created for you and the name of the destinations will be provided to you**. 
->
->- The `definitionId` for your specific workflow, which you can find within your trigger in SAP Build Process Automation project. You can get this by going to your triggers in the deployed version of your project, and clicking **View**.
-
->   Copy the payload to a text editor, and there you can copy just the definition ID.
-
->   ![Definition ID](definitionId.png)
-
+The name of the SAP BTP destination to your SAP Build Process Automation instance, which you have created in the exercise before. 
+The `definitionId` for your specific process, which you have already copied in one of the former exercises.
 
 ---
 
 ### A few important UI concepts
 
-Before you begin, we want to help you understand how apps are developed with SAP Build Apps.
+Before you go through the exercise, we want to help you understand how apps are developed with SAP Build Apps.
 
 Every app is built on a UI canvas – the canvas is the background of the app. On the canvas, you drag and drop components: text fields, input boxes, toggle bars, images and many other components you want the user to interact with.
 
@@ -95,8 +81,6 @@ Select **Build an Application**.
 Select **Web & Mobile Application**.
 
 ![Select project type](new-project-web-project.png)
-
->**IMPORTANT:** In the next step, if you are in a workshop, please use a unique identify for the name of your app, such as `Create Sales Order 001 DBW` – based on your SAP BTP user name or and based on your initials.
  
 For the project name, enter `Create Sales Order`, then click **Create**.
   
@@ -111,14 +95,14 @@ By default your new application contains a page with title and text fields. In t
 
 This is known as creating the user interface, also known as the UI.
 
->Note that there are 2 tabs for this tutorial step. 
+>Note that there are 2 options for this exercise step. 
 >
->- You can do the first tab, **Basic steps**, which we recommend and which will teach you about UI components, stylizing them, and organizing them on the page.
+>- You can do the first one, **Basic steps**, which we recommend and which will teach you about UI components, stylizing them, and organizing them on the page.
 >
->- You can instead do the second tab, **Import Project**, which will bypass the nitty gritty of adding and stylizing components, and instead teach you how to import an SAP Build Apps project into an existing project. This way is much faster.
+>- You can instead do the second one, **Import Project**, which will bypass the nitty gritty of adding and stylizing components, and instead teach you how to import an SAP Build Apps project into an existing project. This way is much faster.
  
 
-[OPTION BEGIN [Basic Steps]]
+### Option 1 - Basic steps
 
 1. Select the text field, and click the **X** to delete it.
 
@@ -128,11 +112,11 @@ This is known as creating the user interface, also known as the UI.
 
     ![Page name](UI-page-name.png)
 
-4. Click the title field, and in the **Properties** tab change the **Content** text to `Sales Order Workflow`.
+3. Click the title field, and in the **Properties** tab change the **Content** text to `Sales Order Workflow`.
 
     ![Title](UI-title.png)
 
-5. To the canvas, drag a Container component. 
+4. To the canvas, drag a Container component. 
 
     >Container components let you group components and configure the collection of the components as a single unit.
 
@@ -164,7 +148,7 @@ This is known as creating the user interface, also known as the UI.
 
     This saves the new style in the **Style** tab.
 
-6. Into this container ( **Form** ), drag in another container.
+5. Into this container ( **Form** ), drag in another container.
    
     >It may be easier to drag it into the **Tree** view on the lower right, so you can put it precisely where you want. The **Tree** makes it easier to select specific components and to create a hierarchy of components on the page.
 
@@ -182,7 +166,7 @@ This is known as creating the user interface, also known as the UI.
     
     Select the input field, and in the **Properties** tab, delete `Label` from the **Label** property.  
 
-7. From the **Tree** view, select the inside container ( **Container1** ).
+6. From the **Tree** view, select the inside container ( **Container1** ).
 
     ![Copy](copy1.png)
  
@@ -194,7 +178,7 @@ This is known as creating the user interface, also known as the UI.
 
     ![Multiple fields](UI-multiple-fields.png)
 
-8.  Click on each field label and change it to the following field names, in this order:
+7.  Click on each field label and change it to the following field names, in this order:
 
     | Fields | 
     |-------|
@@ -205,7 +189,7 @@ This is known as creating the user interface, also known as the UI.
 
     ![Name fields](UI-name-fields.png)
 
-9.  At the bottom of the page (outside the outside container), add a button.
+8.  At the bottom of the page (outside the outside container), add a button.
 
     In the **Properties** tab, set the **Label** to `Get Approval`.
 
@@ -215,11 +199,11 @@ This is known as creating the user interface, also known as the UI.
 
     For **Background color**, change the color `Brand` to `Highlight`.
 
-10. Click **Save** (upper right).
+9.  Click **Save** (upper right).
 
-[OPTION END]
 
-[OPTION BEGIN [Import Project]]
+
+### Option 2 - Import Project
 
 We really want you to see some of things related to stylizing you can do with SAP Build Apps. But we understand that stylizing a UI may be tedious for some people.
 
@@ -237,13 +221,10 @@ If you really want, you can skip doing the stylizing and instead import the proj
 
 5. Click **Replace**
 
-Click **Done** and you can go to the next step.
-
-[OPTION END]
+    ![Skip UI](Replace2.png)
 
 
-
-
+Whether you have chosen option 1 or option 2 now move on with the following steps.
 
 ### Enable SAP BTP authentication
 You need to enable SAP BTP authentication because you want to use SAP BTP destinations, and users need to be authenticated to use them.
@@ -262,10 +243,7 @@ SAP BTP authentication also has the benefit of requiring authentication in your 
 
     On the confirmation popup, click **OK**. 
 
-
-
-
-
+    ![Auth](auth2.png)
 
 
 
@@ -274,14 +252,7 @@ As part of setting up SAP Build Process Automation, you created an SAP BTP desti
 
 Now you will set up the connection from your app to that destination, so you can call SAP Build Process Automation.
 
->Note that there are 2 tabs for this tutorial step. 
->
->- You can do the first tab, **Basic Steps**, which we recommend and which will teach you about many of the features and s for data resources.
->
->- You can instead do the second tab, **Import Data Resource**, which will bypass the nitty gritty of setting up the data resource, and instead teach you how to search the Marketplace and install a data component.
-
-
-[OPTION BEGIN [Create Data Resource]]
+### Create Data Resource
 
 1. Open the **Data** tab, at the top of the page.
 
@@ -295,8 +266,8 @@ Now you will set up the connection from your app to that destination, so you can
 
     | Field                | Value                                         |
     | -------------------- | --------------------------------------------- |
-    | Data entity name   | `Trigger Workflow`                             |
-    | BTP destination name | `spa-process-destination` (or the destination you created, if you created your own) |
+    | Data entity name   | `Trigger Process`                             |
+    | BTP destination name | `sbpa-process-destination` (or the destination you created, if you created your own) |
 
     ![Base](data-resource-base.png)
 
@@ -312,7 +283,7 @@ Now you will set up the connection from your app to that destination, so you can
 
     ![Add fields](schema3.png)
 
-    >**IMPORTANT:** Click on the **Add New** button **BELOW** the `salesorderdetails` field.
+    **IMPORTANT:** Click on the **Add New** button **BELOW** the `salesorderdetails` field.
 
     | Field Name           | Type   |
     | -------------------- | ------ |
@@ -326,9 +297,13 @@ Now you will set up the connection from your app to that destination, so you can
     | **`SalesOrganisation`**    | ***Text***   |
     | **`DistributionChannel`**  | ***Text***   |
 
-    >**IMPORTANT:** Enter the fields exactly as shown above because casing it important and otherwise SAP Build Process Automation will not match what you send with the fields you defined there. Also, there is no date type in this window, so dates should be entered as text fields.
+    >**IMPORTANT:** Enter the fields exactly as shown above. Otherwise SAP Build Process Automation will not match what you send with the fields you defined there. Also, there is no date type in this window, so dates should be entered as text fields.
 
-4. Click the **create** panel.
+    It should look like this:
+
+    ![Add fields](schema4.png)
+
+5. Click the **create** panel.
 
     Then enable the create action with the toggle button.
 
@@ -337,9 +312,11 @@ Now you will set up the connection from your app to that destination, so you can
 
     ![Create enable](data-resource-create.png)
 
-5. For **Request headers**, click the binding **X**, then **List of values**.
+6. For **Request headers**, click the binding **X**, then **List of values**.
 
     ![Request headers](requestheaders.png)
+
+    ![Request headers](ListofValues.png)
 
     Click **Add a value**, and add the following key-value pair:
 
@@ -352,7 +329,7 @@ Now you will set up the connection from your app to that destination, so you can
 
     Click **Save**.
 
-6. For **Request body mapper**, click the binding **X**, then **Formula > Create formula**.
+7. For **Request body mapper**, click the binding **X**, then **Formula > Create formula**.
 
     Enter the following for the formula -- replace `<your definition ID>` with the ID for your process that you saved from your process trigger:
 
@@ -360,7 +337,7 @@ Now you will set up the connection from your app to that destination, so you can
     ENCODE_JSON({  "definitionId": "<your definition ID>",  "context":  query.record })
     ```
 
-    >If you forgot the `definitionID` for your process, you can simply open the deployed version of your SAP Build Process Automation project, and view the trigger you created. This was all explained in the previous tutorial [Run the Sales Order Business Process](https://developers.sap.com/tutorials/spa-academy-run-salesorderprocess.html).
+    >If you forgot the `definitionID` for your process, you can simply open the deployed version of your SAP Build Process Automation project, and view the trigger you created. This was all explained in the previous tutorial [Run the Sales Order Business Process](xxx).
 
     The formula should look something like this:
 
@@ -370,54 +347,9 @@ Now you will set up the connection from your app to that destination, so you can
 
     >The request body mapper will format the body of this HTTP request. For SAP Build Process Automation trigger API, the body provides the name of the process you want to trigger, plus all the input fields defined for that process.
 
-7. Click **Save Data Entity** (bottom right).
+8. Click **Save Data Entity** (bottom right).
 
     Click **Save** (in the upper right to save all your changes to the project).
-
-[OPTION END]
-
-[OPTION BEGIN [Import Data Resource]]
-
->If you started to create the data resource yourself, just delete the data resource and start with the instructions in this tab.
-
-1. On the main UI Canvas, click **Marketplace**.
-
-    ![Marketplace](importdata1.png)
-
-2. Search for: `gCgeEdbUoiC5FrwvHEOs-Q`
-
-    You should see the Trigger Workflow.
-
-    ![Trigger Workflow](importdata2.png)
-
-3. Select the **Trigger Workflow** component, and click **Install.
-
-    ![Install](importdata3.png)
-
-4. Open the **Data** tab, and open the **Trigger Workflow** data resource.
-
-    ![Open data resource](importdata4.png)
-
-    Click **create**, and open the formula for the **Request Body Mapper**.
-     to your definitionId
-
-    ![Create action](importdata5.png)
-
-    The only thing you need to do is change the formula so the `definitionId` is equal to the `definitionId` for your process. 
-
-    ![Definition ID](importdata6.png)
-
-    >You can find the `definitionId` of your process in the lobby. In the lobby, go to **Monitoring > Manage Process and Workflows**, and search for your process by project/process name.
-
-
-5. Click Save twice.
-   
-6. Click **Save Data Entity** (bottom right).
-
-    Click **Save** (in the upper right to save all your changes to the project).
-
-[OPTION END]
-
 
 
 ### Test the trigger
