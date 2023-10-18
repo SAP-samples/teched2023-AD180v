@@ -3,7 +3,7 @@ After creating a subscription for SAP Build Work Zone, standard edition in your 
 
 1.  Navigate to **SAP BTP Cockpit** subaccount. Select **Services** > **Instances and Subscriptions**. Choose **Create**.
 
-    <!-- border -->![Create instance](014.png)  
+  ![Create instance](014.png)  
 
 2.  For the new instance:
     -  Select **SAP Build Process Automation** as a **Service**.
@@ -13,11 +13,11 @@ After creating a subscription for SAP Build Work Zone, standard edition in your 
     -  Set **Instance Name** as **SPA-instance**.
     -  Choose **Create**. 
 
-    <!-- border -->![Instance](015.png)
+  ![Instance](015.png)
 
 3. The instance was added.
 
-    <!-- border -->![Instance](016b.png)
+  ![Instance](016b.png)
 
 ### Create a Service Key for the SAP Build Process Automation Instance
 
@@ -29,11 +29,11 @@ You can use service keys to generate credentials to communicate directly with a 
 
 1. In your SAP BTP subaccount, under **Services**> **Instances and Subscriptions**, select the instance that you created above.
 
-    <!-- border -->![Select instance](016c.png)
+  ![Select instance](016c.png)
 
 2. On the details screen that opens, choose **Service Keys**> **Create**.
 
-    <!-- border -->![Create service key](016d.png)
+  ![Create service key](016d.png)
 
 3. On the creation screen, enter any name for your service key.
 
@@ -41,17 +41,17 @@ You can use service keys to generate credentials to communicate directly with a 
 
 5. Choose **Create**.
 
-    <!-- border -->![Create service key](016e.png)
+  ![Create service key](016e.png)
 
     The service key is created and you can view the credentials. 
 
-    <!-- border -->![View credentials](016f.png)
+  ![View credentials](016f.png)
 
 6. Once you open it, download the json file.
 
     > You will need these credentials to configure destinations.
 
-    <!-- border -->![View credentials](01.png)
+  ![View credentials](01.png)
 
 ### Configure SAP Build Process Automation Destination
 
@@ -62,7 +62,7 @@ Before developing with SAP Build Process Automation or for configuring SAP Build
 
 1. Choose **Connectivity**> **Destinations**> **New Destination**.
 
-    <!-- border -->![New destination](01a.png)
+  ![New destination](01a.png)
 
 2. Choose **Blank Template**, and enter the following details from the downloaded json file:
 
@@ -81,7 +81,7 @@ Before developing with SAP Build Process Automation or for configuring SAP Build
     
     For your values, please refer to screenshot below:
 
-    <!-- border -->![New destination](01b.png)
+  ![New destination](01b.png)
 
 
 3. Add additional properties copied from the service key:
@@ -98,15 +98,15 @@ Before developing with SAP Build Process Automation or for configuring SAP Build
 
     For your values, please refer to the screenshot below:
 
-    <!-- border -->![New destination](01c.png)
+  ![New destination](01c.png)
 
 4. **Save** your changes.
 
-    <!-- border -->![New destination](01d.png)
+  ![New destination](01d.png)
 
 5. Test the destination by selecting **Check Connection**.
 
-    <!-- border -->![New destination](01e.png)
+  ![New destination](01e.png)
 
 
 
@@ -116,15 +116,15 @@ Once you have created a destination, you must now assign roles to any users who 
 
 1. Navigate to **SAP BTP Cockpit** subaccount > **Security** > **Users**.
 
-    <!-- border -->![navigate to Users](Step3-1.png)
+  ![navigate to Users](Step3-1.png)
 
 2.  Select the user to whom you will give the roles then on **Enter Full-Screen Mode** .
 
-    <!-- border -->![Select user](Step3-2.png)
+  ![Select user](Step3-2.png)
 
 3.  Choose **Assign Role Collection**.
 
-    <!-- border -->![Assign Role Collection button](Step3-3.png)
+  ![Assign Role Collection button](Step3-3.png)
 
 4.  Select **Launchpad Admin** and **Launchpad External User** then choose **Assign Role Collection**. 
 
@@ -132,44 +132,44 @@ Once you have created a destination, you must now assign roles to any users who 
     
     > **Launchpad external user** is the role for whom accesses the final Business Site. 
 
-    <!-- border -->![Select Roles](Step3-4.png)
+  ![Select Roles](Step3-4.png)
 
     The roles are assigned. 
 
-    <!-- border -->![Result assignation](Step3-5.png)
+  ![Result assignation](Step3-5.png)
 
 
 ### Open and manage SAP Build Work Zone Application
 
 1.  Navigate back to **SAP BTP Cockpit** subaccount. Choose **Services** then **Instances and Subscriptions**. Choose **Go to Application** next to **SAP Build Work Zone, standard edition**.
 
-    <!-- border -->![SBWSE](018.png) 
+  ![SBWSE](018.png) 
 
 2. The Site Manager is now ready to use. Select **Channel Manager**.
 
-    <!-- border -->![SBWSE](031.png)
+  ![SBWSE](031.png)
 
 3.  Choose **Update Content**.
 
-    <!-- border -->![SBWSE](032.png)
+  ![SBWSE](032.png)
     
     > The content updates and the status changes to Updated.
 
 4.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
 
-    <!-- border -->![SBWSE](033.png)
+  ![SBWSE](033.png)
     
-    <!-- border -->![SBWSE](033b.png)
+  ![SBWSE](033b.png)
 
 5.  Select all items and click **Add**.
 
-    <!-- border -->![SBWSE](034.png)
+  ![SBWSE](034.png)
 
 6.  Navigate to **Content Manager**. Choose **Create** and select **Group**.
 
-    <!-- border -->![SBWSE](040.png)
+  ![SBWSE](040.png)
     
-    <!-- border -->![SBWSE](040a.png)
+  ![SBWSE](040a.png)
 
 7.  Manage the Group:
     - Set **Title** to **SAP Build Process Automation**.
@@ -178,20 +178,20 @@ Once you have created a destination, you must now assign roles to any users who 
     - Choose **Save**.
     - Go back to **Content Manager**. 
 
-    <!-- border -->![SBWSE](041.png)
+  ![SBWSE](041.png)
 
 8.  Select **Everyone** item to edit it. Select **Edit** to edit role.
 
-    <!-- border -->![SBWSE](042.png)
+  ![SBWSE](042.png)
 
-    <!-- border -->![SBWSE](043.png)
+  ![SBWSE](043.png)
 
 9.  Manage changes:
 
     - Assign **My Inbox**, **Process Workspace**, **Visibility Scenario Dashboard** and **Visibility Scenario Instances** to **Everyone** role.
     - Choose **Save**.
 
-    <!-- border -->![SBWSE](044a.png)
+  ![SBWSE](044a.png)
 
 
 ---

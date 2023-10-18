@@ -12,17 +12,14 @@
   - How to create a site using SAP Build Work Zone, standard edition
 
 ## Intro
-In this tutorial we'll create a site for a company called `JobCore`. We'll then add business apps to this site.
+In this exercise we'll create a site for a company called `JobCore`. We'll then add business apps to this site.
 
 
 ### Access SAP Build Work Zone, standard edition
 
-
 You are now ready to access **SAP Build Work Zone, standard edition**. 
 
 1. From the side panel, click **Instances and Subscriptions**.
-
-    ![Open Subscriptions](15-instances-and-subscriptions.png)
 
 2. Under the **Subscriptions** tab, click  **SAP Build Work Zone, standard edition**.  You can also click **Go to Application** on the right.
 
@@ -75,4 +72,7 @@ When you create a site, you are directed to the **Site Settings** screen. In thi
   ![Navigate to site directory](3-to-site-directory.png)
 
 
-  Your site is empty for now. In the next tutorials, you're going to add business apps to your site.
+  Your site is empty for now. In the next exercises, you're going to add business apps to your site.
+
+### Next Step
+
