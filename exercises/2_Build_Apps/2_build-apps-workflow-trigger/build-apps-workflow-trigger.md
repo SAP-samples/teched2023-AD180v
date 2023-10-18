@@ -97,9 +97,9 @@ This is known as creating the user interface, also known as the UI.
 
 >Note that there are 2 options for this exercise step. 
 >
->- You can do the first one, **Basic steps**, which we recommend and which will teach you about UI components, stylizing them, and organizing them on the page.
+>- You can do the first one, **[Basic steps](#option-1---basic-steps)**, which we recommend and which will teach you about UI components, stylizing them, and organizing them on the page.
 >
->- You can instead do the second one, **Import Project**, which will bypass the nitty gritty of adding and stylizing components, and instead teach you how to import an SAP Build Apps project into an existing project. This way is much faster.
+>- You can instead do the second one, **[Import Project](#option-2---import-project)**, which will bypass the nitty gritty of adding and stylizing components, and instead teach you how to import an SAP Build Apps project into an existing project. This way is much faster.
  
 
 ### Option 1 - Basic steps

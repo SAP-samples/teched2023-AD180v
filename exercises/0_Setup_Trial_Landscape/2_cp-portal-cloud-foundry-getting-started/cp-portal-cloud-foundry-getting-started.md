@@ -133,4 +133,4 @@ You are now ready to access **SAP Build Work Zone, standard edition**.
 
 
 ## Next Step
-Move on with [the setup of SAP Build Process Automation in trial](exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)
+Move on with [the setup of SAP Build Process Automation in trial](/exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)

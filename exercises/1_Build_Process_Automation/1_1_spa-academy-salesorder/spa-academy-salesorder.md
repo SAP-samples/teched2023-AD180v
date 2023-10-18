@@ -2,7 +2,7 @@
 <!-- description --> Create a business project and process to build and extend business processes.
 
 ## Prerequisites 
-  - A SAP BTP Trial account, please follow [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial Booster](exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)
+  - A SAP BTP Trial account, please follow [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial Booster](/exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)
 
 ## You will learn
   - How to create a SAP Build Process Automation project.
@@ -485,4 +485,4 @@ Once you have successfully completed the project, your final process looks as be
 
 
 ## Next Step
-Move on with the next exercise to [Run the Sales Order Business Process](exercises/1_Build_Process_Automation/1_2_spa-academy-run-salesorderprocess/spa-academy-run-salesorderprocess.md).
+Move on with the next exercise to [Run the Sales Order Business Process](/exercises/1_Build_Process_Automation/1_2_spa-academy-run-salesorderprocess/spa-academy-run-salesorderprocess.md).

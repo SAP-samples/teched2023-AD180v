@@ -114,4 +114,4 @@ When you will check the connection to the destination, the status will show **40
 
 ### Next Step
 
-Now it's time to [Create SAP Build App to Trigger Process](exercises/2_Build_Apps/2_build-apps-workflow-trigger/build-apps-workflow-trigger.md)
+Now it's time to [Create SAP Build App to Trigger Process](/exercises/2_Build_Apps/2_build-apps-workflow-trigger/build-apps-workflow-trigger.md)
