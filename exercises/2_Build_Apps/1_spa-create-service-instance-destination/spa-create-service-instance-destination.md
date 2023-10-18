@@ -2,16 +2,14 @@
 <!-- description --> Create a destination to trigger a business process by creating a service instance and service key of SAP Build Process Automation.
 
 ## Prerequisites
-- Account on [SAP BTP](btp-free-tier-account) to try out Free Tier service plans
-- Subscribe to [SAP Build Process Automation](spa-subscribe-booster) using booster in SAP BTP Free Tier
-- Proper roles to create service instance, service key and destinations in SAP BTP Cockpit
+- Subscribed to SAP Build Process Automation on trial and assigned the required roles (done via booster)
 
 ## You will learn
 - How to create a destination in the SAP BTP cockpit to start a business process from SAP Build Apps
 - How to create a service instance and service key for SAP Build Process Automation
 
 ## Intro
-In this tutorial, you will create a service instance and service key for SAP Build Process Automation. You would consume the credentials of the service key of SAP Build Process Automation to create a destination that would trigger a business process from SAP Build Apps.
+In this exercise, you will create a service instance and service key for SAP Build Process Automation. You would consume the credentials of the service key of SAP Build Process Automation to create a destination that would trigger a business process from SAP Build Apps.
 
 ---
 
@@ -19,13 +17,13 @@ In this tutorial, you will create a service instance and service key for SAP Bui
 
 Once you have successfully subscribed to SAP Build Process Automation in SAP BTP Cockpit, you can find the Subscription in  your subaccount view, under **Instances and Subscriptions**.
 
-<!-- border --> ![SBPA Service](1.png)
+![SBPA Service](1.png)
 
 1. Let's create an **Instance** for SAP Build Process Automation. Choose **Create**.
 
 2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**. Choose **Next**.
 
-    <!-- border --> ![Create](2.png)
+    ![Create](2.png)
 
 3. Enter the values for other fields as shown below and give an instance name as **spa-adoption-us**. Choose **Create**.
 
@@ -37,25 +35,25 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Space | dev
     | Instance Name | any name   (spa-adoption-us)
 
-    <!-- border --> ![Create](3.png)  
+    ![Create](3.png)  
 
 4. Once the instance is created successfully, you can find it in **Instances** section.
 
-    <!-- border --> ![Create](6.png)  
+    ![Create](6.png)  
 
 ### Create a service key for the instance of SAP Build Process Automation  
 
 1. Once you have successfully created the instance, select **...** > **Create Service Key**.
 
-    <!-- border --> ![Create](7.png)  
+    ![Create](7.png)  
 
 2. Enter the name for Service Key as **spa-key** and choose **Create**.
 
-    <!-- border --> ![Create](8.png)  
+    ![Create](8.png)  
 
 3. The service key is created and you can view the credentials.
 
-    <!-- border --> ![Create](9.png)  
+    ![Create](9.png)  
 
 4. After the key is provisioned, open it and take note of the following fields:
 
@@ -65,13 +63,13 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
     These values are needed later in the **Destination Configuration** section.
 
-    <!-- border --> ![Create](9.1.png)  
+    ![Create](9.1.png)  
 
 ### Create a destination to trigger process
 
 1. Navigate to **Destinations** > **New Destination**. Enter the destination name as `spa_process_destination`.
 
-    <!-- border --> ![Create](10.png)
+    ![Create](10.png)
 
 2. Enter the details as below.
 
@@ -97,7 +95,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     - `HTML5.DynamicDestination`
     - `WebIDEEnabled`  
 
-    <!-- border --> ![Create](11.png)    
+    ![Create](11.png)    
 
     You have successfully created a destination and you can trigger your business process from any service like SAP Build Apps.
 
@@ -107,4 +105,4 @@ When you will check the connection to the destination, the status will show **40
 
 > Even though the connection returns unauthorized, the status is successful.
 
-<!-- border --> ![Status connection](12.png) 
+![Status connection](12.png) 
