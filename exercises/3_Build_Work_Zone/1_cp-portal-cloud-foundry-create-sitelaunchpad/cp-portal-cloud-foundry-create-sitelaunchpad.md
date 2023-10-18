@@ -76,3 +76,4 @@ When you create a site, you are directed to the **Site Settings** screen. In thi
 
 ### Next Step
 
+Move with the next step to [Integrate an app from SAP Build Apps to SAP Build Work Zone](/exercises/3_Build_Work_Zone/2_cp-portal-cloud-foundry-new-sapui5/cp-portal-cloud-foundry-new-sapui5.md)

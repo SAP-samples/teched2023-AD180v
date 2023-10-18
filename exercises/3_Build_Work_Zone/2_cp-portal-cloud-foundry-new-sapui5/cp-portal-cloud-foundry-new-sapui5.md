@@ -40,17 +40,17 @@ In this exercise, you'll use the **Content Manager** to add apps to SAP Build Wo
 
     * **App UI Technology**: URL
 
-    * **URL**:  `https://sapui5.hana.ondemand.com/test-resources/sap/m/demokit/cart/webapp/index.html`
+    * **URL**: the URL of your app you have created with SAP Build Apps, similar like this one `https://XYZtrial.launchpad.cfapps.us10.hana.ondemand.com/ag30789.ag30789-1.0.0/index.html`
 
   ![Enter app properties](3-add-app-properties.png)
 
-    > When working in your own environment, it's better to integrate SAPUI5 apps by configuring a destination to the relevant system and setting the app properties to use this destination. In this case in the  **App UI Technology** dropdown list, you would select `SAPUI5`. This configuration allows you to better manage your content in the Dev-QA-Prod lifecycle.
+  
 
-4. Click the **Navigation** tab to specify the intent of your app.
+1. Click the **Navigation** tab to specify the intent of your app.
 
     > The unique combination of a semantic object and an action is called an intent. It is used to define navigation to an application.
 
-5. Enter the following values:
+2. Enter the following values:
 
     * **Semantic Object**: `Order`
 
@@ -64,11 +64,11 @@ In this exercise, you'll use the **Content Manager** to add apps to SAP Build Wo
 
 7. Enter the following values:
 
-      * **Subtitle**: `Shopping Cart `
+      * **Subtitle**: `Create new Sales Orders`
 
-      * **Information**:  `Order Now!`
+      * **Information**:  `Trigger Approvals`
 
-      * **Icon**: Click the browse icon, type `my-sales-order`, and click on the displayed icon to add it to your tile.
+      * **Icon**: Click the browse icon and select one.
 
 8. On the right, you can see a preview of the tile with all the properties you entered. Click **Save**.
 
@@ -112,5 +112,7 @@ For end users to access the app in runtime, you must assign the app to a role.
 4. Click **Save**.
 
 
-You've successfully created an SAPUI5 app. In the next tutorial, you'll create another app (URL app) and then you'll add both apps to a page.
+You've successfully created added an app. 
+
+### Next Step
 
