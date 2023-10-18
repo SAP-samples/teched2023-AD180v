@@ -1,42 +1,6 @@
-# Exercise 2 - Exercise 2 Description
-
-In this exercise, we will create...
-
-## Exercise 2.1 Sub Exercise 1 Description
-
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
-
-
-
-## Exercise 2.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
-
-## Summary
-
-You've now ...
-
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+## Exercise 3 - Create a Business Site with SAP Build Work Zone, standard edition
+- [Exercise 3.1 - Create a Site Using SAP Build Work Zone, standard edition](/exercises/3_Build_Work_Zone/1_cp-portal-cloud-foundry-create-sitelaunchpad/cp-portal-cloud-foundry-create-sitelaunchpad.md)
+- [Exercise 3.2 - Integrate an SAP Build Apps application into SAP Build Work Zone, standard edition](/exercises/3_Build_Work_Zone/2_workzone-build-sales-app/workzone-build-sales-app.md)
+- [Exercise 3.3 - Add My Inbox from SAP Build Process Automation to SAP Build Work Zone](/exercises/3_Build_Work_Zone/4_spa-configure-workzone/spa-configure-workzone.md)
+- [Exercise 3.4 - Design Your Site With the New SAP Build Work Zone Experience](/exercises/3_Build_Work_Zone/5_cp-portal-cloud-foundry-spaces-pages/cp-portal-cloud-foundry-spaces-pages.md)
+- [Exercise 3.5 - Experience the End-to-End scenario](/exercises/3_Build_Work_Zone/5_EndtoEndRun/Run.md)
