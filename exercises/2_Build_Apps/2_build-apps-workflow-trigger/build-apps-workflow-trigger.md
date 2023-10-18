@@ -367,24 +367,26 @@ SAP Build App enables you to test whether your connection works. Here, we will t
 
     ![Test parameters](test-parameters.png)
 
+    ![Test parameters](test-parameters2.png)
+
 
 If all works OK, you will get a **201** status code and a response with information about the process instance you just triggered, something like this:
 
 ```JavaScript
 {
-  "id": "54988e48-8056-11ed-9a13-eeee0a99244a",
-  "definitionId": "us10.my-account.salesorderapprovals.orderProcessing",
-  "definitionVersion": "6",
-  "subject": "Order Processing",
+  "id": "98161c6e-6db8-11ee-89f5-eeee0a87ee4b",
+  "definitionId": "us10.8500566dtrial.salesordermanagementte23.orderProcessing",
+  "definitionVersion": "2",
+  "subject": null,
   "status": "RUNNING",
-  "businessKey": "54988e48-8056-11ed-9a13-eeee0a99244a",
+  "businessKey": null,
   "parentInstanceId": null,
-  "rootInstanceId": "11118e48-8056-11ed-9a13-eeee0a99244a",
+  "rootInstanceId": "98161c6e-6db8-11ee-89f5-eeee0a87ee4b",
   "applicationScope": "own",
-  "projectId": "us10.my-account.salesorderapprovals",
-  "projectVersion": "1.0.5",
-  "startedAt": "2022-12-20T11:06:19.318Z",
-  "startedBy": "sb-clone-41c25609-33a1-9999-97d8-34fcd2316008!b3591|workflow!b116",
+  "projectId": "us10.8500566dtrial.salesordermanagementte23",
+  "projectVersion": "1.0.1",
+  "startedAt": "2023-10-18T13:16:48.806Z",
+  "startedBy": "sb-clone-390ed564-e379-4dad-9619-bbb81a4d2bfb!b49390|workflow!b1774",
   "completedAt": null
 }
 ```
@@ -431,10 +433,6 @@ So we will create a variable that will hold the information. A data variable is 
 1. Back on the UI canvas (click the **UI Canvas** tab at the top), select **Variables**.
 
 2. On the left, click **Data Variables**.
-
-    >If you get a big text box saying **Welcome to Variables**, you can read it but then you can close it by clicking the **X**.
-
-    >![Date variable documentation](data-variable-docs.png)
    
 3. Click **Add Data Variable**, and choose **Trigger Workflow** as the data resource on which to base the data variable.
 
@@ -450,9 +448,7 @@ So we will create a variable that will hold the information. A data variable is 
 
 5. Click **Save** (upper right).
 
->Make sure the name of the data variable is exactly `Trigger Workflow1` with no extra spaces or characters.
->
->![Check variable name](checkvariablename.png)
+>Make sure the name of the data variable is exactly `Trigger Process1` with no extra spaces or characters.
 
 
 
@@ -469,7 +465,7 @@ Whenever someone types into the input box, the value is automatically copied int
    
 2. Click on the first input field (for **Customer**).
 
-    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Workflow1 > shipToParty**.
+    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Process1 > shipToParty**.
 
     ![Binding input field](bind-input1.png)
 
@@ -477,19 +473,19 @@ Whenever someone types into the input box, the value is automatically copied int
 
 3. Click on the second input field (for **Material**).
 
-    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Workflow1 > material**.
+    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Process1 > material**.
 
     Click **Save**
 
 4. Click on the third input field (for **Amount**).
 
-    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Workflow1 > orderAmount**.
+    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Process1 > orderAmount**.
 
     Click **Save**
 
 5. Click on the fourth input field (for **Delivery Date**).
 
-    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Workflow1 > expectedDeliveryDate**.
+    In the **Properties** tab, click the **X** next to the **Value** field, and select **Data and Variables > Data Variables > Trigger Process1 > expectedDeliveryDate**.
 
     Click **Save**
 
@@ -500,10 +496,10 @@ Whenever someone types into the input box, the value is automatically copied int
 
 
 
-### Add logic to trigger workflow
-We need to set up the logic so when someone clicks the **Get Approval** button (an event), we send the sales order data to our SAP Build Process Automation workflow using the data resource we previously created. 
+### Add logic to trigger the process
+We need to set up the logic so when someone clicks the **Get Approval** button (an event), we send the sales order data to our process in SAP Build Process Automation using the data resource we have previously created. 
 
-1. Click on the **Get Approval** button, and open the logic canvas by clicking **Add logic to Button1** at the bottom right.
+1. Click on the **Get Approval** button, and open the logic canvas by clicking **Show logic for Button1** at the bottom right to open the logic editor.
 
     ![Open logic canvas](logic-open1.png)
 
@@ -515,9 +511,7 @@ We need to set up the logic so when someone clicks the **Get Approval** button (
 
     ![Logic configuration](logic-properties-tab.png)
 
-    For **Resource name**, this should already be set to **Trigger Workflow**, since you have only one data resource.
-
-    ![Create record binding](logic-create-record-binding.png)
+    For **Resource name**, this should already be set to **Trigger Process**, since you have only one data resource.
     
     For **Record**, you have to bind each of the data variable fields to the appropriate record field. 
 
@@ -530,10 +524,10 @@ We need to set up the logic so when someone clicks the **Get Approval** button (
     Click **Formula**, then click on the existing formula, and replace it with the following:
    
     ```JavaScript
-    {salesorderdetails: {shipToParty: data["Trigger Workflow1"].salesorderdetails.shipToParty, material: data["Trigger Workflow1"].salesorderdetails.material, orderAmount: NUMBER(data["Trigger Workflow1"].salesorderdetails.orderAmount), expectedDeliveryDate: data["Trigger Workflow1"].salesorderdetails.expectedDeliveryDate, division: "1010", salesOrderType: "OR", shippingCountry: "Barbados", salesOrganisation: "10", distributionChannel: "1000"}}
+    {salesorderdetails: {shipToParty: data["Trigger Process1"].salesorderdetails.shipToParty, material: data["Trigger Process1"].salesorderdetails.material, orderAmount: NUMBER(data["Trigger Process1"].salesorderdetails.orderAmount), expectedDeliveryDate: data["Trigger Process1"].salesorderdetails.expectedDeliveryDate, division: "1010", salesOrderType: "OR", shippingCountry: "Barbados", salesOrganisation: "10", distributionChannel: "1000"}}
     ```
 
-    >**IMPORTANT:** The formula assumes that you named your data variable `Trigger Workflow1`, which should be the default name if you named your data resource `Trigger Workflow`.
+    >**IMPORTANT:** The formula assumes that you named your data variable `Trigger Process1`, which should be the default name if you named your data resource `Trigger Process`.
 
     >A typo in the name of the data variable, like an extra space, will mess up the binding.
 
@@ -592,14 +586,14 @@ We need to set up the logic so when someone clicks the **Get Approval** button (
 
     | Field | Value |
     |-------|-------|
-    | Customer | `Joe's Bikes` |
+    | Customer | `The Bike Store` |
     | Material | `HT-1000` |
-    | Amount  | `100000` |
-    | Delivery Date  | `2023-03-31` |
+    | Amount  | `101` |
+    | Delivery Date  | `2023-11-30` |
 
 6. Click **Get Approval**. When the toast message appears take a screenshot.
 
-Your process should be triggered and require approval (since the amount is 100,000 or above).
+Your process should be triggered and require approval (since the amount above 100).
 
 You should see the toast message indicating the workflow was triggered, and with the process instance ID.
 
@@ -612,8 +606,10 @@ Go to the **Monitor** tab, then **Monitor > Process and Workflow Instances**. Th
 - You can see the new process instance.
 - You can see the process ID is the same as in the toast message in the app.
 - You can see the context, which is the values sent with the API (4 of them, in yellow, you entered in the input fields and the others were hardcoded in the formula for the **Create record** flow function).
-- You can also see the execution log, which shows that the process stopped at the approval step (since it was at least 100,000) and is awaiting approval. If you expand the approval step you can see more information, including who the approval request was sent to.
+- You can also see the execution log, which shows that the process stopped at the approval step (since it was above 100) and is awaiting approval. If you expand the approval step you can see more information, including who the approval request was sent to.
 
 ![Preview in process automation](launch-preview-SPA.png)
 
 
+### Next Step
+Move on with the next step to [deploy the app created with SAP Build Apps to SAP BTP](/exercises/2_Build_Apps/3_build-apps-deploy/build-apps-deply.md).
