@@ -73,22 +73,9 @@ Before deploying, you must have a build showing as `delivered`.
     ![Origin key](originkey.png)
 
 
-**!!!!to be changed!!!!**
-
-
-    >Since SAP Build Apps requires a custom identity provider (or, IDP, the service that lets you sign into to BTP), you will sign in with the custom identity provider. To do this, you must provide the code for the specific provider.
-
-3. Enter your custom IDP origin key in the input box – which for many workshops, will be `am86fwfbe-platform` or `sap.custom` – and then click **Sign in with alternative identity provider**.
+3. Then click **Sign in with default identity provider**.
     
-3. Once signed in, select the Cloud Foundry organization to deploy the app to.
-
-    >**For SAP Build workshops**, this will `Work Zone Training _training-emea-z3ktmhk1`.
-
-    ![Select org](deploy4.png)
-
-    >The deployment is always to the default space of the organization.
-
-4. Click **Deploy MTA**.
+4. Click **DEPLOY MTA TO DEV**.
 
     ![Deploy MTA](deploy5.png)
 
@@ -100,19 +87,9 @@ Before deploying, you must have a build showing as `delivered`.
 
     ![Alt text](deploy7.png)
 
-    The name of the app is at the end of the URL, for example, above in the picture, `ag3278`.
+    The name of the app is at the end of the URL, for example, above in the picture, `ag30789`.
 
-    >**IMPORTANT:** As of the writing of this tutorial, the link in this screen did not work.
-    >
-    >Generally the link will be in this format:
-    >
-    >`https://<tenant subdomain>.launchpad.cfapps.eu10.hana.ondemand.com/<app name>.<app name>-<version>/page.Page1.html`
-    >
-    >The app name is generally in the format `ag1234`. So an example URL is:
-    >
-    >`https://mysubaccount-f5ytahk1.launchpad.cfapps.eu10.hana.ondemand.com/ag5633.ag5633-1.0.0/page.Page1.html`
-    >
-    >In any event, you can get the correct link in the BTP cockpit, as long as you have the app name in the link, such as above `ag5633`.
+    **Copy** and **save** the URL.
 
 ### Run app
 1. Open your subaccount's cockpit.
@@ -123,4 +100,8 @@ Before deploying, you must have a build showing as `delivered`.
 
     Click the application link (save this link if you later want to embed the app in SAP Build Work Zone).
 
-    You should now see your application.
+    You should now see your application. 
+
+### Next Step
+Congratulations, your are now also done with the exercises around SAP Build Apps.
+Now move on with the exercises around SAP Build Work Zone and start with [Create a Site Using SAP Build Work Zone, standard edition](/exercises/3_Build_Work_Zone/1_cp-portal-cloud-foundry-create-sitelaunchpad/cp-portal-cloud-foundry-create-sitelaunchpad.md).
