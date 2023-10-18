@@ -32,16 +32,15 @@ Hint: It is also possible to follow the exercise in your own productive environm
   
 - **Exercise 2 - Create a Sales Order App with SAP Build Apps**
     - [Exercise 2.1 - Create Destination to Trigger Process from any Service](exercises/2_Build_Apps/1_spa-create-service-instance-destination/spa-create-service-instance-destination.md)
-    - [Exercise 2.2 - Create SAP Build App to Trigger Workflow](exercises/2_Build_Apps/2_build-apps-workflow-trigger/build-apps-workflow-trigger.md)
+    - [Exercise 2.2 - Create SAP Build App to Trigger Process](exercises/2_Build_Apps/2_build-apps-workflow-trigger/build-apps-workflow-trigger.md)
     - [Exercise 2.3 - Deploy SAP Build App to SAP BTP](exercises/2_Build_Apps/3_build-apps-deploy/build-apps-deply.md)
   
 - **Exercise 3 - Create a Business Site with SAP Build Work Zone, standard edition**
     - [Exercise 3.1 - Create a Site Using SAP Build Work Zone, standard edition](exercises/3_Build_Work_Zone/1_cp-portal-cloud-foundry-create-sitelaunchpad/cp-portal-cloud-foundry-create-sitelaunchpad.md)
-    - [Exercise 3.2 - Integrate an SAP Build Apps app to SAP Build Work Zone - prerequ](exercises/3_Build_Work_Zone/2_cp-portal-cloud-foundry-new-sapui5/cp-portal-cloud-foundry-new-sapui5.md)
-    - [Exercise 3.2 - Integrate an SAP Build Apps app to SAP Build Work Zone](exercises/3_Build_Work_Zone/3_workzone-build-6-sales-app/workzone-build-6-sales-app.md)
-    - [Exercise 3.3 - create an SAP BTP service instance for SAP Build Work Zone, standard edition](exercises/3_Build_Work_Zone/4_spa-configure-workzone/spa-configure-workzone.md)
+    - [Exercise 3.2 - Integrate an SAP Build Apps application into SAP Build Work Zone, standard edition](exercises/3_Build_Work_Zone/2_workzone-build-sales-app/workzone-build-sales-app.md)
+    - [Exercise 3.3 - Add My Inbox from SAP Build Process Automation to SAP Build Work Zone](exercises/3_Build_Work_Zone/4_spa-configure-workzone/spa-configure-workzone.md)
     - [Exercise 3.4 - Design Your Site With the New SAP Build Work Zone Experience](exercises/3_Build_Work_Zone/5_cp-portal-cloud-foundry-spaces-pages/cp-portal-cloud-foundry-spaces-pages.md)
-    - [Exercise 3.5 - Experience the End-to-End Flow](exercises/3_Build_Work_Zone/6_workzone-build-7-user-experience/workzone-build-7-user-experience.md)
+    - [Exercise 3.5 - Experience the End-to-End Flow](exercises/3_Build_Work_Zone/5_EndtoEndRun/Run.md)
 
 
 **IMPORTANT**
