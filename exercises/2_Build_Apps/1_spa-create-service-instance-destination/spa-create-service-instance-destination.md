@@ -25,7 +25,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
     ![Create](2.png)
 
-3. Enter the values for other fields as shown below and give an instance name as **spa-adoption-us**. Choose **Create**.
+3. Enter the values for other fields as shown below and give an instance name as **sbpa-apps**. Choose **Create**.
 
     | Field|Value
     | --- | :---
@@ -33,7 +33,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
     | Plan | standard - Instance
     | Runtime Environment | Cloud Foundry
     | Space | dev
-    | Instance Name | any name   (spa-adoption-us)
+    | Instance Name | any name   (sbpa-apps)
 
     ![Create](3.png)  
 
@@ -47,7 +47,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
     ![Create](7.png)  
 
-2. Enter the name for Service Key as **spa-key** and choose **Create**.
+2. Enter the name for Service Key as **sbpa-key** and choose **Create**.
 
     ![Create](8.png)  
 
@@ -67,7 +67,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 ### Create a destination to trigger process
 
-1. Navigate to **Destinations** > **New Destination**. Enter the destination name as `spa_process_destination`.
+1. Navigate to **Destinations** > **New Destination**. Enter the destination name as `sbpa_process_destination`.
 
     ![Create](10.png)
 
@@ -75,25 +75,32 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
     | Field|Value
     | --- | :---
-    | Name | any name (`spa_process_destination`)
+    | Name | any name (`sbpa_process_destination`)
     | Type | HTTP
     | Description | any description
-    | URL | `https://spa-api-gateway-bpi-eu-prod.cfapps.eu10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
+    | URL | `https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/public/workflow/rest/v1/workflow-instances`
     | Proxy Type | Internet
     | Authentication |  OAuth2ClientCredentials
     | Use `mTLS` for token retrieval |  Off
     | Client ID | Paste the clientid noted previously in step 2
     | Client Secret | Paste the client secret noted previously in step 2
     | Token Service URL Type | Dedicated
-    | Token Service URL|  `url/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div>The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
+    | Token Service URL|  `<url>/oauth/token`, where `url` is noted previously in step 2<div>&nbsp;</div>
+    Copy and paste the URL you have taken in the steps before and add `/oauth/token` to it.
+    The final URL should be something like this: <div></div>`https://<your tenant>.authentication.<domain>.hana.ondemand.com/oauth/token`
     | Token Service User| Blank
     | Token Service Password| Blank
 
-    > Additionally, enable the following Properties when you would like to integrate with SAP Build Apps.
+    Additionally, enable the following Properties when you would like to integrate with SAP Build Apps.
+    Some of the properties you can select from the drop-down list, others you need to enter manually.
 
-    - `AppgyverEnabled`
-    - `HTML5.DynamicDestination`
-    - `WebIDEEnabled`  
+    |Property | Value
+    | --- | :---
+    |`AppgyverEnabled` | true
+    |`HTML5.DynamicDestination` | true
+    |`WebIDEEnabled` | true
+
+    Select **Save**.
 
     ![Create](11.png)    
 
@@ -106,3 +113,7 @@ When you will check the connection to the destination, the status will show **40
 > Even though the connection returns unauthorized, the status is successful.
 
 ![Status connection](12.png) 
+
+### Next Step
+
+Now it's time to [Create SAP Build App to Trigger Process](exercises/2_Build_Apps/2_build-apps-workflow-trigger/build-apps-workflow-trigger.md)
