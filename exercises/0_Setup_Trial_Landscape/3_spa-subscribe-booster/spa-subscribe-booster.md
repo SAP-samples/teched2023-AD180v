@@ -3,7 +3,8 @@
 <!-- description --> Activate the SAP Build Process Automation service in the SAP BTP with Booster
 
 ## Prerequisites
-  - [Get an Account on SAP BTP to Try Out Free Tier Service Plans](btp-free-tier-account) 
+- You have created a trial account, as described in [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Your trial account must be in the **US East (VA) - AWS**.
 
 ## You will learn
   - How to activate SAP Build Process Automation in SAP BTP Free Trial account

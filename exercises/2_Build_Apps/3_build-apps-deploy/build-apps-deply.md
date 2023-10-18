@@ -20,7 +20,7 @@ As of the writing of this exercise, you could only deploy to an Cloud Foundry or
 
 >As you are an admin of the SAP BTP trial subaccount, you can see who is an org member by going to the cockpit and navigating to **Cloud Foundry > Org Members**.
 
->![Org members](CForgmemember.png)
+![Org members](CForgmemember.png)
 
 
 ---

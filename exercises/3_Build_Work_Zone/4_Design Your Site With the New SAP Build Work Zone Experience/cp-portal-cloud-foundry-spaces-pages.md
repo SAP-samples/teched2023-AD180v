@@ -120,4 +120,4 @@ In this step, you'll assign the space to the `Everyone` role.
 ### Next step
 
 You are done now with all the configurations. Congratulations!
-Move on and run the complete scenario in this step.
+Move on and run the complete scenario in this step: [Run the scenario](/exercises/3_Build_Work_Zone/5_EndtoEndRun/Run.md)

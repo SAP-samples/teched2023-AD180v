@@ -123,7 +123,7 @@ You should receive this response message "401: Unauthorized"
 
   ![SBWSE](032.png)
     
-    > The content updates and the status changes to Updated.
+  > The content updates and the status changes to Updated.
 
 4.  Select **Content Manager**. On the top tabs select **Content Explorer** and then select **HTML5 Apps**.
 
@@ -148,11 +148,5 @@ You should receive this response message "401: Unauthorized"
 
   ![SBWSE](044a.png)
 
-
------
-
------
-
-
-
----
+## Next Step
+Move on and [Design Your Site With the New SAP Build Work Zone Experience](/exercises/3_Build_Work_Zone/4_cp-portal-cloud-foundry-spaces-pages/cp-portal-cloud-foundry-spaces-pages.md)

@@ -2,7 +2,8 @@
 <!-- description --> To get started with building a site in SAP Build Work Zone, standard edition, you must perform the required onboarding steps.
 
 ## Prerequisites
-  - If you want to use a trial environment, you need to first register it. You can register to a trial account using this link: [Create a trial account](https://www.sap.com/israel/products/business-technology-platform/trial.html). Scroll down and click **Get trial now**.
+- You have created a trial account, as described in [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Your trial account must be in the **US East (VA) - AWS**.
 
 
 ## You will learn
