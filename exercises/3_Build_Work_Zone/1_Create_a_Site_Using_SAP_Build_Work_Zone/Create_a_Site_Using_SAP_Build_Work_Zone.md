@@ -76,4 +76,4 @@ When you create a site, you are directed to the **Site Settings** screen. In thi
 
 ### Next Step
 
-Move with the next step to [Integrate an app from SAP Build Apps to SAP Build Work Zone](/exercises/3_Build_Work_Zone/2_workzone-build-sales-app/workzone-build-sales-app.md)
+Move with the next step to [Integrate an app from SAP Build Apps to SAP Build Work Zone](/exercises/3_Build_Work_Zone/2_Integrate_an_SAP_Build_Apps_application_into_SAPBuildWorkZone/workzone-build-sales-app.md)

@@ -69,4 +69,4 @@ Note that your app is in the list of content items.
 ![Work Zone](10.png)
 
 ## Next Step
-Move on with the next step [Add My Inbox from SAP Build Process Automation to SAP Build Work Zone](/exercises/3_Build_Work_Zone/3_spa-configure-workzone/spa-configure-workzone.md)
+Move on with the next step [Add My Inbox from SAP Build Process Automation to SAP Build Work Zone](/exercises/3_Build_Work_Zone/3_spa-configure-workzone/AddMyInboxWZ.md)

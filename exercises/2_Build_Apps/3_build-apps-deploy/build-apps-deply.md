@@ -104,4 +104,4 @@ Before deploying, you must have a build showing as `delivered`.
 
 ### Next Step
 Congratulations, your are now also done with the exercises around SAP Build Apps.
-Now move on with the exercises around SAP Build Work Zone and start with [Create a Site Using SAP Build Work Zone, standard edition](/exercises/3_Build_Work_Zone/1_cp-portal-cloud-foundry-create-sitelaunchpad/cp-portal-cloud-foundry-create-sitelaunchpad.md).
+Now move on with the exercises around SAP Build Work Zone and start with [Create a Site Using SAP Build Work Zone, standard edition](/exercises/3_Build_Work_Zone/1_Create_a_Site_Using_SAP_Build_Work_Zone/Create_a_Site_Using_SAP_Build_Work_Zone.md).

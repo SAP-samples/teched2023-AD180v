@@ -149,4 +149,4 @@ You should receive this response message "401: Unauthorized"
   ![SBWSE](044a.png)
 
 ## Next Step
-Move on and [Design Your Site With the New SAP Build Work Zone Experience](/exercises/3_Build_Work_Zone/4_cp-portal-cloud-foundry-spaces-pages/cp-portal-cloud-foundry-spaces-pages.md)
+Move on and [Design Your Site With the New SAP Build Work Zone Experience](/exercises/3_Build_Work_Zone/4_Design_Your_Site_With_the_New_SAP_Build_Work_Zone_Experience/cp-portal-cloud-foundry-spaces-pages.md)
