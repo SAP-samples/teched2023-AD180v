@@ -1,4 +1,4 @@
-# Deploy SAP Build App to SAP BTP
+# Deploy app from SAP Build App to SAP BTP
 <!-- description --> Deploy an app created with SAP Build Apps to HTML5 applications on SAP BTP.
 
  
@@ -7,44 +7,38 @@
 
 
 ## You will learn
-- How to deploy an SAP Build app to SAP BTP
+- How to deploy an app created with SAP Build Apps to SAP BTP
 
 
 
 ## Intro
-After creating an app in SAP Build Apps, and after viewing the preview on the web and on your mobile device, you can then deploy it directly to SAP BTP, like any other HTML5 application.
+After creating an app in SAP Build Apps, and after viewing the preview on the web, you can deploy it directly to SAP BTP, like any other HTML5 application.
 
-As of the writing of this tutorial, you could only deploy to an Cloud Foundry org's default space.
+As of the writing of this exercise, you could only deploy to an Cloud Foundry org's default space.
 
->**IMPORTANT:** You need to be a member of the Cloud Foundry org and space to which you will be deploying to.
+>**IMPORTANT:** You need to be a member of the Cloud Foundry org and space to which you will be deploying to. Which you normally are.
 
->If you are an admin of the SAP BTP subaccount, you can see who is an org member by going to the cockpit and navigating to **Cloud Foundry > Org Members**.
+>As you are an admin of the SAP BTP trial subaccount, you can see who is an org member by going to the cockpit and navigating to **Cloud Foundry > Org Members**.
 
->![Org members](org-members.png)
+>![Org members](CFForgmember.png)
 
-> If you navigate to the space, there is a similar members for space members.
-
->![Space members](org-space-members.png)
 
 ---
 
 
-### Build app
+### Build the app
 1. Open the **Launch** tab.
    
 2. Select **Open Build Service**.
    
     ![Build service](build1.png)
 
-    The following is displayed, with buttons to configure and start the build in the bottom left.
 
-    ![Build home page](configure1.png)
-
-1. Click **Build**.
+3. Underneath Web App click **Build**.
 
     ![Click Build](build1a.png)
 
-2. Select **MTAR**.
+4. Select **MTAR**.
    
     Select the most current runtime version.
 
@@ -52,9 +46,10 @@ As of the writing of this tutorial, you could only deploy to an Cloud Foundry or
 
     ![Settings](build2.png)
 
-3. Click **Build**.
+5. Click **Build**.
 
-The build may take a a little while(20 minutes or so) so you may want to skip to the next tutorial. If you refresh the page, the status will change from `created` to `queued` to finally `delivered`.
+The build may take a a little while (20 minutes or so). Take a breath and have a break.
+If you refresh the page, the status will change from `created` to `queued` to finally `delivered`.
 
 ![Build status](build3.png)
 
