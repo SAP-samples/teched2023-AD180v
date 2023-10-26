@@ -201,6 +201,7 @@ This is known as creating the user interface, also known as the UI.
 
 9.  Click **Save** (upper right).
 
+Skip **Option 2** and move on with **[Enable SAP BTP authentication](#Enable-SAP-BTP-authentication)**
 
 
 ### Option 2 - Import Project

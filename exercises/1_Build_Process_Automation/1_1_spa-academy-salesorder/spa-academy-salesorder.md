@@ -91,7 +91,7 @@ You have two options to create the fields in data type. You can either import an
 In this option, you will be importing an excel file to create the data type. Based on the values present in the excel, the type of field is determined automatically and the fields are created accordingly. For example `orderAmount` is maintained as 19000, hence the type of the field `orderAmount` is determined as Number.
 
 
-1.  Download [this](exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/SalesorderDatatype.xlsx) excel file for Sales Order datatype.
+1.  Download [this](/exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/SalesorderDatatype.xlsx) excel file for Sales Order datatype.
 
      ![Create data type](6.6.png)
 
