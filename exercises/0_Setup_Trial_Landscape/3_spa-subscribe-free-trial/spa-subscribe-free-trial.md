@@ -65,6 +65,7 @@ In order to have access, you will have to assign the role collections to your us
 
 3. In **Role Collections** section, choose **Assign Role Collection**.
 
+
     ![Trial](005.png)
 
 4. In the **Assign Role Collection** window, in the search bar, type **process** to find Process Automation Roles.
