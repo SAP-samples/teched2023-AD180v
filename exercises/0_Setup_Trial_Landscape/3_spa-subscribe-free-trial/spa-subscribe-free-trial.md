@@ -59,7 +59,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
 ### Assign Roles
 
-In order to have access, you will have to assign the role collections to your user. 
+In order to have access, you will have to assign the role collections to your user and the newly created identity provider for SAP Build Apps, which you have created before. 
    
 2. Go to the **Users**, under **Security**, and select your user.
 
@@ -78,6 +78,8 @@ In order to have access, you will have to assign the role collections to your us
 7. After assigning roles, your **Role Collections** section should look like this:
 
     ![Trial](007.png)
+
+**Repeat these steps for the newly created identity provider and also assign the same role collections.**
 
 8. Navigate to **Instances and Subscriptions** and choose the **Go to Application** icon.
 

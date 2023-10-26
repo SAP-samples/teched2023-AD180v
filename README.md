@@ -4,13 +4,15 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2023 session called AD180v - Create Apps, Processes, and Workspaces with SAP Build Solutions.  
-
-## Overview
+This repository contains the material for the SAP TechEd 2023 session called **AD180v - Create Apps, Processes, and Workspaces with SAP Build Solutions**.
 
 Learn how to accelerate development and automation without writing code. Experience how to leverage simple drag-and-drop capabilities to solve complex business problems and build delightful solutions. Extending or improving standard business process running in business solutions like SAP S/4HANA. 
 The combination of SAP Build Process Automation, SAP Build Apps and SAP Build Work Zone makes the difference. 
 Exercises can be completed at your own pace. 
+
+## Overview
+
+<img width="1145" alt="image" src="https://github.com/SAP-samples/teched2023-AD180v/Scenario.png">  
 
 The exercises are belonging to each other, so please follow the flow accordingly.
 
@@ -20,9 +22,9 @@ The requirements to follow the exercises in this repository are trial access to 
 Please **follow the steps for each product**, as described in the following exercises and **also following the order**:
 1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/build-apps-trial-booster.md)
 2. Setup [SAP Build Work Zone](exercises/0_Setup_Trial_Landscape/2_cp-portal-cloud-foundry-getting-started/cp-portal-cloud-foundry-getting-started.md)
-3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)
+3. Setup [SAP Build Process Automation](exercises/0_Setup_Trial_Landscape/3_spa-subscribe-free-trial/spa-subscribe-free-trial.md)
 
-Hint: It is also possible to follow the exercise in your own productive environment.
+>Hint: It is also possible to follow the exercise in your own productive environment.
 
 ## Exercises
 
@@ -43,7 +45,7 @@ Hint: It is also possible to follow the exercise in your own productive environm
     - [Exercise 3.5 - Experience the End-to-End Flow](exercises/3_Build_Work_Zone/5_EndtoEndRun/Run.md)
 
 
-**IMPORTANT**
+
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
