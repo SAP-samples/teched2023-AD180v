@@ -2,7 +2,7 @@
 <!-- description --> Create a destination to trigger a business process by creating a service instance and service key of SAP Build Process Automation.
 
 ## Prerequisites
-- Subscribed to SAP Build Process Automation on trial and assigned the required roles (done via booster)
+- Subscribed to SAP Build Process Automation on trial and assigned the required roles (as done in the setup exercises)
 
 ## You will learn
 - How to create a destination in the SAP BTP cockpit to start a business process from SAP Build Apps

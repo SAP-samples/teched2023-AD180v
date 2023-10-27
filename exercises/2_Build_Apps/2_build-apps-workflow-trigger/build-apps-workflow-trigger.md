@@ -6,8 +6,8 @@
 - You set up SAP Build App and entered the lobby.
 - You set up SAP Process Automation, and created the process as described in the exercise section before.
 - You know the `definitionId` for the process you created.
-- You have set up the destination to SAP Build Process Automation, as described here <link to create instance>
-
+- You have set up the destination to SAP Build Process Automation, as described in the exercise before.
+  
 ## You will learn
 - How to create a simple UI
 - How to create a form
