@@ -84,7 +84,7 @@ In the next step, you will create a data type which would be used to integrate w
 
 A data type is an artifact describing a data structure that can be used as an input and/or output parameter in automations or processes.
 
-You have two options to create the fields in data type. You can either import an excel file **[Import Excel File - Option 1](#Import-Excel-File---Option-1))** or **[Define Fields Manually - Option 2](#Define-Fields-Manually-Option---2)**.
+You have two options to create the fields in data type. You can either import an excel file **[Import Excel File - Option 1](#Import-Excel-File---Option-1))** or **[Define Fields Manually - Option 2](#Define-Fields-Manually---Option-2)**.
 
 #### Import Excel File - Option 1
 

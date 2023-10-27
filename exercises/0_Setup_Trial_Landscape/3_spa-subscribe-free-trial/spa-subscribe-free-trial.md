@@ -3,8 +3,8 @@
 <!-- description --> Activate SAP Build Process Automation service in SAP BTP Free Trial
 
 ## Prerequisites
-  - Complete [Get a Free Account on SAP BTP Trial tutorial](hcp-create-trial-account)
-    > **IMPORTANT**: CREATE AN ACCOUNT IN US East (VA) - AWS trial region
+- You have created a trial account, as described in [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Your trial account must be in the **US East (VA) - AWS**.
 
 ## You will learn
   - How to activate SAP Build Process Automation in SAP BTP Free Trial account
