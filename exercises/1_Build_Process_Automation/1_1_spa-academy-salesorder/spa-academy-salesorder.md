@@ -84,7 +84,7 @@ In the next step, you will create a data type which would be used to integrate w
 
 A data type is an artifact describing a data structure that can be used as an input and/or output parameter in automations or processes.
 
-You have two options to create the fields in data type. You can either import an excel file or define the fields manually.
+You have two options to create the fields in data type. You can either import an excel file **[Import Excel File (Option 1)](#Import-Excel-File-(Option-1))** or **[Define Fields Manually (Option 2)](#Define-Fields-Manually-(Option-2))**.
 
 #### Import Excel File (Option 1)
 
@@ -122,7 +122,7 @@ In this option, you will be importing an excel file to create the data type. Bas
 
 5. Click **Save** to save the data type.
 
-
+Skip Option 2 and move on with **[Create and configure API trigger](#Create-and-configure-API-trigger)**
 
 ### Define Fields Manually (Option 2)
 
@@ -197,6 +197,8 @@ The inputs and outputs are configured for the API trigger and these inputs can t
     |  **Name**    | **Type**
     |  :------------- | :-------------
     |  `salesorderdetails`       | `SalesOrder`
+
+    Mark the box **Required**.
     
     **Important:** Ensure you have changed the "Type" from **String** to **SalesOrder**. This is the data type you have created before.
 

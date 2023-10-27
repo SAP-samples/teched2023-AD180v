@@ -81,6 +81,9 @@ In order to have access, you will have to assign the role collections to your us
     ![Trial](007.png)
 
 **Repeat these steps for the newly created identity provider and also assign the same role collections.**
+Then you should have this result:
+
+   ![Trial](image005.png)
 
 8. Navigate to **Instances and Subscriptions** and choose the **Go to Application** icon.
 
