@@ -24,6 +24,8 @@ The exercises are belonging to each other, so please follow the flow accordingly
 
 ## Requirements
 
+Please use **Google Chrome browser** for the best experience.
+
 The requirements to follow the exercises in this repository are trial access to all three products.
 Please **follow the steps for each product**, as described in the following exercises and **also following the order**:
 1. Setup [SAP Build Apps](exercises/0_Setup_Trial_Landscape/1_build-apps-trial-booster/build-apps-trial-booster.md)

@@ -2,7 +2,7 @@
 <!-- description --> Create a business project and process to build and extend business processes.
 
 ## Prerequisites 
-  - A SAP BTP Trial account, please follow [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial Booster](/exercises/0_Setup_Trial_Landscape/3_spa-subscribe-booster/spa-subscribe-booster.md)
+  - A SAP BTP Trial account, please follow [Subscribe to SAP Build Process Automation Using SAP BTP Free Trial](/exercises/0_Setup_Trial_Landscape/3_spa-subscribe-free-trial/spa-subscribe-free-trial.md)
 
 ## You will learn
   - How to create a SAP Build Process Automation project.
@@ -84,9 +84,9 @@ In the next step, you will create a data type which would be used to integrate w
 
 A data type is an artifact describing a data structure that can be used as an input and/or output parameter in automations or processes.
 
-You have two options to create the fields in data type. You can either import an excel file **[Import Excel File (Option 1)](#Import-Excel-File-(Option-1))** or **[Define Fields Manually (Option 2)](#Define-Fields-Manually-(Option-2))**.
+You have two options to create the fields in data type. You can either import an excel file **[Import Excel File - Option 1](#Import-Excel-File---Option-1))** or **[Define Fields Manually - Option 2](#Define-Fields-Manually-Option---2)**.
 
-#### Import Excel File (Option 1)
+#### Import Excel File - Option 1
 
 In this option, you will be importing an excel file to create the data type. Based on the values present in the excel, the type of field is determined automatically and the fields are created accordingly. For example `orderAmount` is maintained as 19000, hence the type of the field `orderAmount` is determined as Number.
 
@@ -124,7 +124,7 @@ In this option, you will be importing an excel file to create the data type. Bas
 
 Skip Option 2 and move on with **[Create and configure API trigger](#Create-and-configure-API-trigger)**
 
-### Define Fields Manually (Option 2)
+### Define Fields Manually - Option 2
 
 You have two options to create the fields in data type. You can either import an excel or define the fields manually.
 
