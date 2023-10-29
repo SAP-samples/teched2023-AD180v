@@ -2,7 +2,7 @@
 <!-- description --> Release, deploy and run the business process
 
 ## Prerequisites
-  - Complete [Create Sales Order Business Process](exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/spa-academy-salesorder.md) exercise.
+  - Complete [Create Sales Order Business Process](/exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/spa-academy-salesorder.md) exercise.
 
 ## You will learn
   - How to release and deploy the process.
@@ -103,11 +103,19 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
 
-    - From the **SAP Build lobby**, Navigate to **Monitor** tab and within the Monitor tab, access **Manage** > **Process and Workflow Definitions**.
-    - Search for the project `Sales Order Management <your unique identifier>` that you have created in previous tutorial.
+    - From the **SAP Build lobby** navigate to **Monitoring** in the menu on the left hand side and access **Manage** > **Processes and Workflows**.
+    
+    ![Run](4.2.png)
+
+    - Select your project `Sales Order Management <your unique identifier>` that you have created in the previous exercise.
+
+    ![Run](4.3.png)
+
     - Click on **Start New Instance**.
 
-    ![Run](4.2.png)
+    ![Run](4.4.png)
+
+    
 
 5.  **Remove** the example payload in the dialog. You need to add the payload you saved earlier, but only part of the payload.
    
@@ -132,12 +140,14 @@ Once you have successfully deployed the business process with an API trigger, yo
      }    
 
     ``` 
-    >Common issues when you are unable to start the instance:
 
+    >Common issues when you are unable to start the instance:
     >1. SAP Build Process Automation supports the ISO 8601 format for date and time: YYYY-MM-DD (2023-12-10) and hh:mm:ss (15:33:16).Hence make sure to enter `expectedDeliveryDate` in the supported format as shown above.
     >2. There is no mismatch in the field names.
     >3. Data type mismatch. For example, if you enter order amount as a string instead of a number ("orderAmount":"101").
-    
+
+
+
 6. Click **Start New Instance and Close**.
 
     ![Run](5.png)
@@ -161,6 +171,8 @@ Monitoring business process is one of the key aspect of the automated processes.
 
     The best way to find your process is to search for your user number or initials, depending on how you named it.
 
+    ![Run](Run6a.png)
+
 2. Choose your process instance that was just triggered above.
 
     >Explore different process monitoring options. Observe the process instance information, process context which is the actual process data flowing across different activities in the process and the execution logs where you can see entire trace of how the process has been progressing with some basic runtime information of each activity.
@@ -171,7 +183,7 @@ Monitoring business process is one of the key aspect of the automated processes.
 
 3. As you can see the process is waiting for the task to be completed. These tasks are generated from the forms that are added in the process and can be accessed via the **My Inbox** application.
 
-    ![Run](7.png)
+    ![Run](Run7.png)
 
 
 
@@ -196,7 +208,7 @@ Access the **My Inbox** by going to the SAP Build lobby, and clicking the icon i
 
     ![Run](Run8.1.png)
 
-    Once you acknowledge the notification sent via the approval process, the process will be completed.
+    Once you acknowledge the notification sent via the approval process, the process will be completed. To be able to see this in the Monitoring, you need to enhance the Filter search with the status "Completed".
 
     ![Run](Run9.png)
 
@@ -206,7 +218,7 @@ Repeat the testing above twice more:
 - Amount below 100. This should send the auto-approval form to the **My Inbox**.
 
 
-You have successfully built Sales Order Approval Business process and is now ready to integrate with SAP Build Apps.
+You have successfully built the Sales Order Approval Business process and it is now ready to integrate with SAP Build Apps.
 
 ## Next Step
 
