@@ -268,7 +268,7 @@ Now you will set up the connection from your app to that destination, so you can
     | Field                | Value                                         |
     | -------------------- | --------------------------------------------- |
     | Data entity name   | `Trigger Process`                             |
-    | BTP destination name | `sbpa-process-destination` (or the destination you created, if you created your own) |
+    | BTP destination name | `sbpa_process_destination` (or the destination you created, if you created your own) |
 
     ![Base](data-resource-base.png)
 
@@ -415,9 +415,16 @@ If you've gotten to here, your integration with SAP Build Process Automation is 
 
 You can go into the SAP Build Process Automation monitoring and see there the process you just triggered, and check the context to make sure the parameters were sent properly.
 
+In SAP Build lobby open **Monitoring** and select **Process and Workflow Instances**.
+
 ![Process automation test](test-spa.png)
 
-You can also check the Inbox to see the forms were created and the values properly passed into the workflow.
+Select the newly started process and inspect the logs and the context.
+
+![Process automation test](test-spa1.png)
+
+You can also check the Inbox to see the forms were created and the values properly passed into the workflow. 
+>In case an error message is coming up, please ignore and try again.
 
 ![Inbox](test-inbox.png)
 
