@@ -136,20 +136,24 @@ You have two options to create the fields in data type. You can either import an
 
 In this option you will be defining each field with field name and type of field manually.
 
-1.  Click on **+** > **Create** > **Data Type**.
+1.  Navigate to your project, select **Open Project Content**.
+
+    ![Create data type](6a.png)
+
+2.  Click on **+** > **Create** > **Data Type**.
 
      ![Create data type](6.png)
 
-2.  Name the data type **Sales Order**.
+3.  Name the data type **Sales Order**.
 
      ![6.1](6.1.png)
 
-3. Click on **New Field** to add new fields to the data type **Sales Order**.
+4. Click on **New Field** to add new fields to the data type **Sales Order**.
 
      ![6.7](6.7.png)
 
 
-4.  Repeat the step to add all the fields of the type as shown below.
+5. Repeat the step to add all the fields of the type as shown below.
 
     |  Field Name   | Type
     |  :------------- | :-------------
@@ -170,7 +174,7 @@ In this option you will be defining each field with field name and type of field
 
      ![DataType](6.3.png)
 
-5. Click **Save** to save the data type.
+6. Click **Save** to save the data type.
 
 
 
@@ -287,6 +291,7 @@ Navigate back to the Process Builder canvas to create an Approval Form.
 
    ![8.6](8.6.png)
 
+10. **Save** your work.
 
 
 ### Create and configure Order Approval Notification form
@@ -357,7 +362,7 @@ There are several ways to accelerate the process design. You will now use the fu
 
     ![OR2](OR2.png)
 
-3. At the **Approval Form** select the **+** icon at the **Reject** output, in the context menu select **Forms** and select the newly created or, in fact, duplicated **Order Rejection Form**.
+3. Go back to your process in the process editor. At the **Approval Form** select the **+** icon at the **Reject** output, in the context menu select **Forms** and select the newly created or, in fact, duplicated **Order Rejection Form**.
 
     ![OR3](OR3.png)
 
