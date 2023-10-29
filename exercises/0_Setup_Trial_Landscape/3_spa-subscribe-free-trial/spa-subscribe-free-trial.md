@@ -40,6 +40,7 @@ SAP Build Process Automation in the SAP Business Technology Platform combines th
 
     ![Trial](004freeplan.png)
 
+You can skip the next chapter **Using Entitlement** and move on with the role assignments in **[Assign Roles](#Assign-Roles)**
 
 ### Using Entitlements 
 

@@ -22,6 +22,7 @@ SAP BTP offers a booster that automatically sets up all the things you need to s
 - Cloud Identity Service
 - Trust between custom identity provider and your subaccount
 
+>This booster will also create a subscription to SAP Build Work Zone. Though there are still some steps to be done, as described in the next exercise regarding the setup of SAP Build Work Zone.
 
 1. Go to your global account.
 
@@ -51,7 +52,7 @@ SAP BTP offers a booster that automatically sets up all the things you need to s
 
     Click **Next**.
 
-9. On the **Review** screen, click **Finish**.
+8. On the **Review** screen, click **Finish**.
 
 When everything is installed, you will see the following:
 
