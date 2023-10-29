@@ -135,7 +135,7 @@ You should receive this response message "401: Unauthorized"
 
   ![SBWSE](034.png)
 
-6.  Select **Everyone** item to edit it. Select **Edit** to edit role.
+6.  Go back to **Content Manager** and select **Everyone** item to edit it. Select **Edit** to edit role.
 
   ![SBWSE](042.png)
 

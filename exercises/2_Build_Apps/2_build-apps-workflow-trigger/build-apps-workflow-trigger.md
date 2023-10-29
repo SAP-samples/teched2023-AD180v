@@ -1,5 +1,5 @@
 
-# Create SAP Build App to Trigger Process
+# Create app in SAP Build App to trigger Process
 <!-- description --> Trigger a process created in SAP Build Process Automation from an app created with SAP build Apps.
 
 ## Prerequisites
@@ -206,9 +206,7 @@ Skip **Option 2** and move on with **[Enable SAP BTP authentication](#Enable-SAP
 
 ### Option 2 - Import Project
 
-We really want you to see some of things related to stylizing you can do with SAP Build Apps. But we understand that stylizing a UI may be tedious for some people.
-
-If you really want, you can skip doing the stylizing and instead import the project already stylized. If you want to take this route, do the following:
+You can skip doing the stylizing and instead import the project already stylized. If you want to take this route, do the following:
 
 1. Download the file [`Sales-Order-Trigger.zip.gpg`](https://github.com/sap-tutorials/sap-build-apps/raw/main/tutorials/build-apps-workflow-trigger/Sales-Order-Trigger.zip.gpg).
 
@@ -354,7 +352,7 @@ Now you will set up the connection from your app to that destination, so you can
 
 
 ### Test the trigger
-SAP Build App enables you to test whether your connection works. Here, we will trigger the workflow manually.
+SAP Build App enables you to test whether your connection works. Here, we will trigger the process manually.
 
 1. Open the data resource again by clicking it.
    
@@ -409,7 +407,7 @@ If all works OK, you will get a **201** status code and a response with informat
 >
 >**500:** This may mean that your URLs are wrong, especially, you may have the wrong URL for OAuth authentication, such as you forget to add the path `/oauth/token`.
 >
->Note that field names are case sensitive. This will not cause an error in the API call, but the values will not be passed to the workflow properly and you will not see the values in the workflow forms.
+>Note that field names are case sensitive. This will not cause an error in the API call, but the values will not be passed to the process properly and you will not see the values in the process forms.
 
 If you've gotten to here, your integration with SAP Build Process Automation is working!!
 
@@ -423,7 +421,7 @@ Select the newly started process and inspect the logs and the context.
 
 ![Process automation test](test-spa1.png)
 
-You can also check the Inbox to see the forms were created and the values properly passed into the workflow. 
+You can also check the Inbox to see the forms were created and the values properly passed into the process. 
 >In case an error message is coming up, please ignore and try again.
 
 ![Inbox](test-inbox.png)
@@ -434,15 +432,15 @@ In any event, you can close your data resource definition by clicking **Save Dat
 
 
 ### Create data variable
-Whenever we want to trigger a workflow, we need to send some data – in this case, the sales order information.
+Whenever we want to trigger a process, we need to send some data – in this case, the sales order information.
 
-So we will create a variable that will hold the information. A data variable is based on a specific data resource -- in this case the one to trigger our workflow -- and the variable's schema is automatically duplicated from the data resource.
+So we will create a variable that will hold the information. A data variable is based on a specific data resource -- in this case the one to trigger our process -- and the variable's schema is automatically duplicated from the data resource.
 
 1. Back on the UI canvas (click the **UI Canvas** tab at the top), select **Variables**.
 
 2. On the left, click **Data Variables**.
    
-3. Click **Add Data Variable**, and choose **Trigger Workflow** as the data resource on which to base the data variable.
+3. Click **Add Data Variable**, and choose **Trigger Process** as the data resource on which to base the data variable.
 
     >The schema of the data variable will be the same as the data resource.
 
@@ -603,13 +601,13 @@ We need to set up the logic so when someone clicks the **Get Approval** button (
 
 Your process should be triggered and require approval (since the amount above 100).
 
-You should see the toast message indicating the workflow was triggered, and with the process instance ID.
+You should see the toast message indicating the process was triggered, and with the process instance ID.
 
 ![Preview toast](launch-toast.png)
 
 You can also see the results of the call in SAP Build Process Automation.
 
-Go to the **Monitor** tab, then **Monitor > Process and Workflow Instances**. The first one should be the one you just triggered.
+Go to the **Monitoring** tab, then **Monitor > Process and Workflow Instances**. The first one should be the one you just triggered.
 
 - You can see the new process instance.
 - You can see the process ID is the same as in the toast message in the app.
