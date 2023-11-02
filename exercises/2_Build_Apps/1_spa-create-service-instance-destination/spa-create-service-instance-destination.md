@@ -21,7 +21,7 @@ Once you have successfully subscribed to SAP Build Process Automation in SAP BTP
 
 1. Let's create an **Instance** for SAP Build Process Automation. Choose **Create**.
 
-2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**. Choose **Next**.
+2. Select the Service as **SAP Build Process Automation** and plan as **standard instance**.
 
     ![Create](2.png)
 

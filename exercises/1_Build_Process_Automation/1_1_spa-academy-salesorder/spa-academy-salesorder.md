@@ -49,7 +49,8 @@ There are many use cases where you can make a difference using SAP Build Process
          ![Project information](004.png)
 
     - Choose **Create**.
-
+     >In case a disclaimer window is popping up, just click **Accept** at the bottom of the window. If you cannot find the accept button, descrease your screen resolution or the zoom focus of your browser window. Then it will appear.
+     >![disclaimer](/exercises/1_Build_Process_Automation/1_1_spa-academy-salesorder/disclaimer.png)
 
 
 ### Create a business process
@@ -75,7 +76,7 @@ Once you have successfully created a Business Process Project, you will create a
   3. You are navigated to the Process Builder canvas.
 
      This is a visual canvas on which you map out your business process from start to finish. Other process artifacts are then added to this canvas, with process controls and connectors used to decide how information flows when the process is running.
->In case a disclaimer window is popping up, just click **Accept** at the bottom of the window. If you cannot find the accept button, descrease your screen resolution or the zoom focus of your browser window. Then it will appear.
+
 
 
 In the next step, you will create a data type which would be used to integrate with SAP Build Apps and SAP Build Process Automation.   

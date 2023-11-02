@@ -99,7 +99,7 @@ Once you have successfully deployed the business process with an API trigger, yo
 
     ![Run](4.11.png)
 
-4. Since you have created an API Trigger for the Business process, let's test the process with API Trigger in **Monitor** section before you start the process from SAP Build Apps.
+4. Since you have created an API Trigger for the Business process, let's test the process with API Trigger in **Monitoring** section before you start the process from SAP Build Apps.
 
     `definitionId` of the process can be seen in Monitor section or in the API trigger section as shown in the above step.
 
