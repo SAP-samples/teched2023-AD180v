@@ -22,6 +22,8 @@ The scenario, a common use case, which you will find in almost every organizatio
 
 The exercises are belonging to each other, so please follow the flow accordingly.
 
+>Please find here the slide deck used in this session: [**AD180v - Create Apps, Processes, and Workspaces with SAP Build Solutions**](/AD180v.pdf)
+
 ## Requirements
 
 Please use **Google Chrome browser** for the best experience.
